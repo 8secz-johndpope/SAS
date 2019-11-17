@@ -368,11 +368,11 @@ Agent, you must help our top scientists build a new impactor spacecraft and laun
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="IH2-zK-Iir"/>
                                 </constraints>
-                                <mutableString key="text">Our scientists predict you will have one hour to assemble the new impactor spacecraft before the asteroid has become too close to deflect.
+                                <string key="text">Our scientists predict you will have one hour to assemble the new impactor spacecraft before the asteroid has become too close to deflect.
 
 We don’t have the time to fly you to our assembly location - so you must use our new technology to interact remotely. Your actions will translate to our robotic assembly agents. 
 
-Please find an open area where you can work on assembly. Once there, you will open your camera and you will automatically connect to our facility and see all the parts you need. Assemble the impactor, correctly Agent. The world is counting on you. </mutableString>
+Please find an open area where you can work on assembly. Once there, you will open your camera and you will automatically connect to our facility and see all the parts you need. Assemble the impactor, correctly Agent. The world is counting on you. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -869,13 +869,13 @@ continue to briefing</string>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="2EY-M4-1G4"/>
                                 </constraints>
-                                <mutableString key="text">Stegonography is the practice of hiding a message inside of some form of media. This could mean hiding a message inside of a painting or a song. 
+                                <string key="text">Stegonography is the practice of hiding a message inside of some form of media. This could mean hiding a message inside of a painting or a song. 
 
 For this mission, you will practice stenography with audio samples, to learn how to both encode a message and detect a message.
 
 You will be given a sample audio file. Your first task is to encode a hidden value into the audio file.
 
-Agent, your missions are not the place to play a game of telephone. A poorly encoded message can be the difference between life and death! </mutableString>
+Agent, your missions are not the place to play a game of telephone. A poorly encoded message can be the difference between life and death! </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
