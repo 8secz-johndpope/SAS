@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC1124362381F5CE00CFD2A2 /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC1124352381F5CE00CFD2A2 /* File.rtf */; };
+		AC1124362381F5CE00CFD2A2 /* references.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AC1124352381F5CE00CFD2A2 /* references.rtf */; };
 		AC3BE4CD2380CF930036BDAE /* asteroid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC3BE4CC2380CF930036BDAE /* asteroid.mp4 */; };
 		AC3BE4CF2380D70C0036BDAE /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4CE2380D70C0036BDAE /* VideoPlayerViewController.swift */; };
 		AC3BE4D123810FA50036BDAE /* MissionImpactDetails1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4D023810FA50036BDAE /* MissionImpactDetails1.swift */; };
@@ -58,7 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC1124352381F5CE00CFD2A2 /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
+		AC1124352381F5CE00CFD2A2 /* references.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = references.rtf; sourceTree = "<group>"; };
 		AC3BE4CC2380CF930036BDAE /* asteroid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = asteroid.mp4; path = ../../../Downloads/asteroid.mp4; sourceTree = "<group>"; };
 		AC3BE4CE2380D70C0036BDAE /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		AC3BE4D023810FA50036BDAE /* MissionImpactDetails1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactDetails1.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				AC9E30DE237E5F9700F79DE1 /* Info.plist */,
 				AC9E30D8237E5F9700F79DE1 /* Preview Content */,
 				AC3BE4CE2380D70C0036BDAE /* VideoPlayerViewController.swift */,
-				AC1124352381F5CE00CFD2A2 /* File.rtf */,
+				AC1124352381F5CE00CFD2A2 /* references.rtf */,
 			);
 			path = SAS;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 			files = (
 				AC9E30DD237E5F9700F79DE1 /* LaunchScreen.storyboard in Resources */,
 				AC3BE4CD2380CF930036BDAE /* asteroid.mp4 in Resources */,
-				AC1124362381F5CE00CFD2A2 /* File.rtf in Resources */,
+				AC1124362381F5CE00CFD2A2 /* references.rtf in Resources */,
 				AC9E30DA237E5F9700F79DE1 /* Preview Assets.xcassets in Resources */,
 				AC9E30D7237E5F9700F79DE1 /* Assets.xcassets in Resources */,
 				ACA89166237F705F0068754C /* Main.storyboard in Resources */,
