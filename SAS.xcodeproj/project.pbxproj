@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3BE4CD2380CF930036BDAE /* asteroid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC3BE4CC2380CF930036BDAE /* asteroid.mp4 */; };
+		AC3BE4CF2380D70C0036BDAE /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4CE2380D70C0036BDAE /* VideoPlayerViewController.swift */; };
+		AC3BE4D123810FA50036BDAE /* MissionImpactDetails1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4D023810FA50036BDAE /* MissionImpactDetails1.swift */; };
+		AC3BE4D32381125E0036BDAE /* MissionImpactDetails2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4D22381125E0036BDAE /* MissionImpactDetails2.swift */; };
+		AC3BE4D5238114FF0036BDAE /* MissionImpactDetails3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4D4238114FF0036BDAE /* MissionImpactDetails3.swift */; };
+		AC3BE4D7238118100036BDAE /* CameraView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4D6238118100036BDAE /* CameraView1.swift */; };
+		AC3BE4D9238118CF0036BDAE /* MissionImpactMathScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4D8238118CF0036BDAE /* MissionImpactMathScreen.swift */; };
+		AC3BE4DB23811B3E0036BDAE /* MissionImpactMathCalcScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4DA23811B3E0036BDAE /* MissionImpactMathCalcScreen.swift */; };
+		AC3BE4DD238128290036BDAE /* MissionImpactLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4DC238128290036BDAE /* MissionImpactLaunchScreen.swift */; };
+		AC3BE4DF238128C00036BDAE /* MissionImpactFinale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4DE238128C00036BDAE /* MissionImpactFinale.swift */; };
+		AC3BE4E1238130410036BDAE /* MissionSoundWaveHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4E0238130410036BDAE /* MissionSoundWaveHomeScreen.swift */; };
+		AC3BE4E32381316E0036BDAE /* MissionSoundWaveDetails1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4E22381316E0036BDAE /* MissionSoundWaveDetails1.swift */; };
+		AC3BE4E52381322D0036BDAE /* MissionSoundWaveAccessAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4E42381322D0036BDAE /* MissionSoundWaveAccessAudio.swift */; };
+		AC3BE4E7238133300036BDAE /* MissionSoundWaveShowWave1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4E6238133300036BDAE /* MissionSoundWaveShowWave1.swift */; };
+		AC3BE4E9238133A30036BDAE /* MissionSoundWaveEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4E8238133A30036BDAE /* MissionSoundWaveEncode.swift */; };
+		AC3BE4EB238134800036BDAE /* MissionSoundWaveCompareDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4EA238134800036BDAE /* MissionSoundWaveCompareDetails.swift */; };
+		AC3BE4ED238135240036BDAE /* MissionSoundWaveAR2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4EC238135240036BDAE /* MissionSoundWaveAR2.swift */; };
+		AC3BE4EF238135350036BDAE /* MissionSoundWaveFinale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE4EE238135350036BDAE /* MissionSoundWaveFinale.swift */; };
+		AC3E6DAE237E690900D2EDC7 /* SelectMissionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3E6DAD237E690900D2EDC7 /* SelectMissionScreen.swift */; };
 		AC9E30D1237E5F9100F79DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E30D0237E5F9100F79DE1 /* AppDelegate.swift */; };
 		AC9E30D3237E5F9100F79DE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E30D2237E5F9100F79DE1 /* SceneDelegate.swift */; };
 		AC9E30D5237E5F9100F79DE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E30D4237E5F9100F79DE1 /* ContentView.swift */; };
@@ -15,6 +34,9 @@
 		AC9E30DD237E5F9700F79DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E30DB237E5F9700F79DE1 /* LaunchScreen.storyboard */; };
 		AC9E30E8237E5F9700F79DE1 /* SASTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E30E7237E5F9700F79DE1 /* SASTests.swift */; };
 		AC9E30F3237E5F9800F79DE1 /* SASUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9E30F2237E5F9800F79DE1 /* SASUITests.swift */; };
+		ACA89162237F1C480068754C /* MissionImpactWelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA89161237F1C480068754C /* MissionImpactWelcomeScreen.swift */; };
+		ACA89164237F6CFA0068754C /* MissionImpactVideoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA89163237F6CFA0068754C /* MissionImpactVideoScreen.swift */; };
+		ACA89166237F705F0068754C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA89165237F705F0068754C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +57,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC3BE4CC2380CF930036BDAE /* asteroid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = asteroid.mp4; path = ../../../Downloads/asteroid.mp4; sourceTree = "<group>"; };
+		AC3BE4CE2380D70C0036BDAE /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		AC3BE4D023810FA50036BDAE /* MissionImpactDetails1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactDetails1.swift; sourceTree = "<group>"; };
+		AC3BE4D22381125E0036BDAE /* MissionImpactDetails2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactDetails2.swift; sourceTree = "<group>"; };
+		AC3BE4D4238114FF0036BDAE /* MissionImpactDetails3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactDetails3.swift; sourceTree = "<group>"; };
+		AC3BE4D6238118100036BDAE /* CameraView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView1.swift; sourceTree = "<group>"; };
+		AC3BE4D8238118CF0036BDAE /* MissionImpactMathScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactMathScreen.swift; sourceTree = "<group>"; };
+		AC3BE4DA23811B3E0036BDAE /* MissionImpactMathCalcScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactMathCalcScreen.swift; sourceTree = "<group>"; };
+		AC3BE4DC238128290036BDAE /* MissionImpactLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactLaunchScreen.swift; sourceTree = "<group>"; };
+		AC3BE4DE238128C00036BDAE /* MissionImpactFinale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactFinale.swift; sourceTree = "<group>"; };
+		AC3BE4E0238130410036BDAE /* MissionSoundWaveHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveHomeScreen.swift; sourceTree = "<group>"; };
+		AC3BE4E22381316E0036BDAE /* MissionSoundWaveDetails1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveDetails1.swift; sourceTree = "<group>"; };
+		AC3BE4E42381322D0036BDAE /* MissionSoundWaveAccessAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveAccessAudio.swift; sourceTree = "<group>"; };
+		AC3BE4E6238133300036BDAE /* MissionSoundWaveShowWave1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveShowWave1.swift; sourceTree = "<group>"; };
+		AC3BE4E8238133A30036BDAE /* MissionSoundWaveEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveEncode.swift; sourceTree = "<group>"; };
+		AC3BE4EA238134800036BDAE /* MissionSoundWaveCompareDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveCompareDetails.swift; sourceTree = "<group>"; };
+		AC3BE4EC238135240036BDAE /* MissionSoundWaveAR2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveAR2.swift; sourceTree = "<group>"; };
+		AC3BE4EE238135350036BDAE /* MissionSoundWaveFinale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSoundWaveFinale.swift; sourceTree = "<group>"; };
+		AC3E6DAD237E690900D2EDC7 /* SelectMissionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMissionScreen.swift; sourceTree = "<group>"; };
 		AC9E30CD237E5F9100F79DE1 /* SAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E30D0237E5F9100F79DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9E30D2237E5F9100F79DE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +90,9 @@
 		AC9E30EE237E5F9700F79DE1 /* SASUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SASUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9E30F2237E5F9800F79DE1 /* SASUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SASUITests.swift; sourceTree = "<group>"; };
 		AC9E30F4237E5F9800F79DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA89161237F1C480068754C /* MissionImpactWelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactWelcomeScreen.swift; sourceTree = "<group>"; };
+		ACA89163237F6CFA0068754C /* MissionImpactVideoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionImpactVideoScreen.swift; sourceTree = "<group>"; };
+		ACA89165237F705F0068754C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +146,32 @@
 				AC9E30D0237E5F9100F79DE1 /* AppDelegate.swift */,
 				AC9E30D2237E5F9100F79DE1 /* SceneDelegate.swift */,
 				AC9E30D4237E5F9100F79DE1 /* ContentView.swift */,
-				AC9E30D6237E5F9700F79DE1 /* Assets.xcassets */,
+				AC3E6DAD237E690900D2EDC7 /* SelectMissionScreen.swift */,
+				ACA89161237F1C480068754C /* MissionImpactWelcomeScreen.swift */,
 				AC9E30DB237E5F9700F79DE1 /* LaunchScreen.storyboard */,
+				ACA89163237F6CFA0068754C /* MissionImpactVideoScreen.swift */,
+				AC3BE4D8238118CF0036BDAE /* MissionImpactMathScreen.swift */,
+				AC3BE4D6238118100036BDAE /* CameraView1.swift */,
+				AC3BE4D4238114FF0036BDAE /* MissionImpactDetails3.swift */,
+				AC3BE4D22381125E0036BDAE /* MissionImpactDetails2.swift */,
+				AC3BE4D023810FA50036BDAE /* MissionImpactDetails1.swift */,
+				AC3BE4DA23811B3E0036BDAE /* MissionImpactMathCalcScreen.swift */,
+				AC3BE4DE238128C00036BDAE /* MissionImpactFinale.swift */,
+				AC3BE4DC238128290036BDAE /* MissionImpactLaunchScreen.swift */,
+				ACA89165237F705F0068754C /* Main.storyboard */,
+				AC3BE4EC238135240036BDAE /* MissionSoundWaveAR2.swift */,
+				AC3BE4EE238135350036BDAE /* MissionSoundWaveFinale.swift */,
+				AC3BE4EA238134800036BDAE /* MissionSoundWaveCompareDetails.swift */,
+				AC3BE4E8238133A30036BDAE /* MissionSoundWaveEncode.swift */,
+				AC3BE4E6238133300036BDAE /* MissionSoundWaveShowWave1.swift */,
+				AC3BE4E42381322D0036BDAE /* MissionSoundWaveAccessAudio.swift */,
+				AC3BE4E22381316E0036BDAE /* MissionSoundWaveDetails1.swift */,
+				AC3BE4E0238130410036BDAE /* MissionSoundWaveHomeScreen.swift */,
+				AC9E30D6237E5F9700F79DE1 /* Assets.xcassets */,
+				AC3BE4CC2380CF930036BDAE /* asteroid.mp4 */,
 				AC9E30DE237E5F9700F79DE1 /* Info.plist */,
 				AC9E30D8237E5F9700F79DE1 /* Preview Content */,
+				AC3BE4CE2380D70C0036BDAE /* VideoPlayerViewController.swift */,
 			);
 			path = SAS;
 			sourceTree = "<group>";
@@ -241,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9E30DD237E5F9700F79DE1 /* LaunchScreen.storyboard in Resources */,
+				AC3BE4CD2380CF930036BDAE /* asteroid.mp4 in Resources */,
 				AC9E30DA237E5F9700F79DE1 /* Preview Assets.xcassets in Resources */,
 				AC9E30D7237E5F9700F79DE1 /* Assets.xcassets in Resources */,
+				ACA89166237F705F0068754C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +335,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA89162237F1C480068754C /* MissionImpactWelcomeScreen.swift in Sources */,
+				AC3BE4D5238114FF0036BDAE /* MissionImpactDetails3.swift in Sources */,
 				AC9E30D1237E5F9100F79DE1 /* AppDelegate.swift in Sources */,
+				AC3BE4E32381316E0036BDAE /* MissionSoundWaveDetails1.swift in Sources */,
+				ACA89164237F6CFA0068754C /* MissionImpactVideoScreen.swift in Sources */,
+				AC3BE4E1238130410036BDAE /* MissionSoundWaveHomeScreen.swift in Sources */,
+				AC3BE4EF238135350036BDAE /* MissionSoundWaveFinale.swift in Sources */,
+				AC3BE4E7238133300036BDAE /* MissionSoundWaveShowWave1.swift in Sources */,
+				AC3BE4E52381322D0036BDAE /* MissionSoundWaveAccessAudio.swift in Sources */,
+				AC3BE4CF2380D70C0036BDAE /* VideoPlayerViewController.swift in Sources */,
+				AC3BE4DD238128290036BDAE /* MissionImpactLaunchScreen.swift in Sources */,
 				AC9E30D3237E5F9100F79DE1 /* SceneDelegate.swift in Sources */,
+				AC3BE4D32381125E0036BDAE /* MissionImpactDetails2.swift in Sources */,
+				AC3BE4D123810FA50036BDAE /* MissionImpactDetails1.swift in Sources */,
+				AC3BE4DF238128C00036BDAE /* MissionImpactFinale.swift in Sources */,
+				AC3BE4EB238134800036BDAE /* MissionSoundWaveCompareDetails.swift in Sources */,
+				AC3BE4DB23811B3E0036BDAE /* MissionImpactMathCalcScreen.swift in Sources */,
+				AC3BE4E9238133A30036BDAE /* MissionSoundWaveEncode.swift in Sources */,
+				AC3BE4ED238135240036BDAE /* MissionSoundWaveAR2.swift in Sources */,
+				AC3BE4D7238118100036BDAE /* CameraView1.swift in Sources */,
+				AC3E6DAE237E690900D2EDC7 /* SelectMissionScreen.swift in Sources */,
+				AC3BE4D9238118CF0036BDAE /* MissionImpactMathScreen.swift in Sources */,
 				AC9E30D5237E5F9100F79DE1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

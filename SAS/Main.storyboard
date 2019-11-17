@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vtz-cY-HO0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4II-8q-vkh">
+            <objects>
+                <viewController id="Vtz-cY-HO0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M2z-Fr-48y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ep6-ig-AmY">
+                                <rect key="frame" x="114.5" y="224" width="185" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Welcome Agent">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ojW-EY-7sN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ep6-ig-AmY" firstAttribute="centerX" secondItem="M2z-Fr-48y" secondAttribute="centerX" id="75p-O9-hsW"/>
+                            <constraint firstItem="ep6-ig-AmY" firstAttribute="top" secondItem="mSn-L2-vDd" secondAttribute="top" constant="180" id="e1f-Jd-64c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mSn-L2-vDd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSy-pk-rjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="374"/>
+        </scene>
+        <!--Select Mission Screen-->
+        <scene sceneID="P7f-pa-uQ4">
+            <objects>
+                <viewController id="316-IT-gjU" customClass="SelectMissionScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Yi-eP-aFr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are three available missions for you today." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUk-Wc-RIA">
+                                <rect key="frame" x="57" y="119" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="6Cs-Pk-whu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uHD-i9-CcR">
+                                <rect key="frame" x="85.5" y="355" width="243" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="JY0-sp-zIH"/>
+                                    <constraint firstAttribute="height" constant="97" id="Mfb-d4-h6a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <string key="title">Code Name: SoundWave
+Level: Training</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="zLb-Ng-eg4" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QAs-Bg-N6w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QmM-EG-oRG">
+                                <rect key="frame" x="85.5" y="609" width="243" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="csh-dd-GS1"/>
+                                    <constraint firstAttribute="height" constant="97" id="ywl-UE-VPR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <string key="title">Code Name: Impact
+Level: Critical </string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Af5-iv-mpD" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="LEN-QI-EX3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a mission and await further instructions." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VW9-df-f19">
+                                <rect key="frame" x="57" y="229" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="VpD-9W-D1j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pxM-aE-Feq">
+                                <rect key="frame" x="85.5" y="482" width="243" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="h46-iI-syW"/>
+                                    <constraint firstAttribute="width" constant="243" id="j1K-xs-TF5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <string key="title">Code Name: Wasted 
+Level: Low</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VW9-df-f19" firstAttribute="centerX" secondItem="4Yi-eP-aFr" secondAttribute="centerX" id="1zk-T7-RX8"/>
+                            <constraint firstItem="VW9-df-f19" firstAttribute="top" secondItem="hUk-Wc-RIA" secondAttribute="bottom" constant="50" id="2hg-SF-cGO"/>
+                            <constraint firstItem="hUk-Wc-RIA" firstAttribute="centerX" secondItem="4Yi-eP-aFr" secondAttribute="centerX" id="C7r-IS-nob"/>
+                            <constraint firstItem="pxM-aE-Feq" firstAttribute="top" secondItem="uHD-i9-CcR" secondAttribute="bottom" constant="30" id="J59-lN-b5J"/>
+                            <constraint firstItem="QmM-EG-oRG" firstAttribute="top" secondItem="pxM-aE-Feq" secondAttribute="bottom" constant="30" id="MBq-ro-8A0"/>
+                            <constraint firstItem="uHD-i9-CcR" firstAttribute="top" secondItem="VW9-df-f19" secondAttribute="bottom" constant="66" id="dN0-B5-hk3"/>
+                            <constraint firstItem="pxM-aE-Feq" firstAttribute="centerX" secondItem="4Yi-eP-aFr" secondAttribute="centerX" id="e1r-I2-PPj"/>
+                            <constraint firstItem="QmM-EG-oRG" firstAttribute="centerX" secondItem="4Yi-eP-aFr" secondAttribute="centerX" id="g0B-BO-6zA"/>
+                            <constraint firstItem="uHD-i9-CcR" firstAttribute="centerX" secondItem="4Yi-eP-aFr" secondAttribute="centerX" id="s0c-aj-Nom"/>
+                            <constraint firstItem="hUk-Wc-RIA" firstAttribute="top" secondItem="S66-Vc-olp" secondAttribute="top" constant="75" id="xam-Hg-lec"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S66-Vc-olp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cdT-Zm-QoX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukq-0m-tFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="380"/>
+        </scene>
+        <!--Mission Impact Welcome Screen-->
+        <scene sceneID="h0r-kq-k38">
+            <objects>
+                <viewController id="Af5-iv-mpD" customClass="MissionImpactWelcomeScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ryc-7u-kmb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="O3w-fb-zwc">
+                                <rect key="frame" x="0.0" y="94" width="414" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Iqc-zc-fee"/>
+                                    <constraint firstAttribute="height" constant="97" id="caJ-vx-C2H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <string key="title">Code Name: Impact
+Level: Critical </string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations Agent. You have been accepted for the mission critical Impact assignment." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzE-ib-1mt">
+                                <rect key="frame" x="57" y="221" width="300" height="105.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="g2q-vg-Zi0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KrY-9s-6mK">
+                                <rect key="frame" x="85.5" y="597" width="243" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="43k-V6-F0R"/>
+                                    <constraint firstAttribute="width" constant="243" id="EJP-Za-rua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <string key="title">Accept mission &amp;
+continue to briefing</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xJ9-ke-lt1" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="lVP-kJ-Pq0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAA-Dv-x6i">
+                                <rect key="frame" x="57" y="356.5" width="300" height="210.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ks9-MM-yUO"/>
+                                </constraints>
+                                <string key="text">This mission is extremely time sensitive and the fate of the world hangs in the balance. This is your last chance to turn back and let another agent accept responsibility. If you believe you are up to the task, accept below.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O3w-fb-zwc" firstAttribute="top" secondItem="kmq-x7-OGt" secondAttribute="top" constant="50" id="6eD-ee-FHu"/>
+                            <constraint firstItem="vzE-ib-1mt" firstAttribute="centerX" secondItem="ryc-7u-kmb" secondAttribute="centerX" id="9EJ-UC-EPK"/>
+                            <constraint firstItem="MAA-Dv-x6i" firstAttribute="top" secondItem="vzE-ib-1mt" secondAttribute="bottom" constant="30" id="PFK-Xl-uHj"/>
+                            <constraint firstItem="KrY-9s-6mK" firstAttribute="centerX" secondItem="ryc-7u-kmb" secondAttribute="centerX" id="aYG-Xg-9We"/>
+                            <constraint firstItem="O3w-fb-zwc" firstAttribute="centerX" secondItem="ryc-7u-kmb" secondAttribute="centerX" id="mS7-g0-sma"/>
+                            <constraint firstItem="vzE-ib-1mt" firstAttribute="top" secondItem="O3w-fb-zwc" secondAttribute="bottom" constant="30" id="nr5-LH-QLu"/>
+                            <constraint firstItem="MAA-Dv-x6i" firstAttribute="centerX" secondItem="ryc-7u-kmb" secondAttribute="centerX" id="s2F-tj-BoB"/>
+                            <constraint firstItem="KrY-9s-6mK" firstAttribute="top" secondItem="MAA-Dv-x6i" secondAttribute="bottom" constant="30" id="w7Z-C1-EIw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kmq-x7-OGt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSP-bp-CZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1450.7246376811595" y="379.6875"/>
+        </scene>
+        <!--Mission Impact Video Screen-->
+        <scene sceneID="Chx-Sy-C80">
+            <objects>
+                <viewController id="xJ9-ke-lt1" customClass="MissionImpactVideoScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jNP-a5-KGg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwV-mq-l24">
+                                <rect key="frame" x="7" y="77" width="400" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="ASa-Iw-la9" kind="embed" id="3bf-sH-ePj"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dK-9g-9rQ">
+                                <rect key="frame" x="57" y="557" width="300" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="cLR-nM-yUN"/>
+                                </constraints>
+                                <string key="text">Asteriod x108a has been spotted 500,000 kilometers from Earth. Its current trajectory a direct impact, which will cause an extinction level event. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81q-vt-jBs">
+                                <rect key="frame" x="78" y="703" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="BKi-BV-fo5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="AtC-r2-mbK" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VfO-UO-jrS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ke9-ej-6es" firstAttribute="bottom" secondItem="8dK-9g-9rQ" secondAttribute="bottom" constant="315" id="2Qs-yr-ez0"/>
+                            <constraint firstItem="81q-vt-jBs" firstAttribute="centerX" secondItem="jNP-a5-KGg" secondAttribute="centerX" id="Ews-yQ-UdX"/>
+                            <constraint firstItem="Ke9-ej-6es" firstAttribute="bottom" secondItem="81q-vt-jBs" secondAttribute="bottom" constant="150" id="oKw-HL-YSE"/>
+                            <constraint firstItem="8dK-9g-9rQ" firstAttribute="centerX" secondItem="jNP-a5-KGg" secondAttribute="centerX" id="sHH-98-slc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ke9-ej-6es"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cn-QN-e9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2166.666666666667" y="379.6875"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="vvh-qK-Q2k">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="ASa-Iw-la9" customClass="VideoPlayerViewController" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbm-1K-raU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2835" y="366"/>
+        </scene>
+        <!--Mission Impact Details1-->
+        <scene sceneID="m0b-yg-mS2">
+            <objects>
+                <viewController id="AtC-r2-mbK" customClass="MissionImpactDetails1" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U84-Vf-rWp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkN-oY-GHa">
+                                <rect key="frame" x="57" y="94" width="300" height="525.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tRq-Ul-zru"/>
+                                </constraints>
+                                <string key="text">NASA, along with international partners, have studied the possibility of deflecting an asteroid with an impactor - a spacecraft solely intended to hit and deflect the approaching asteroid. 
+
+The DART mission was designed to study this method, with a planned impact on the asteroid Didymos in 2022. Unfortunately, humanity is out of time. 
+
+Agent, you must help our top scientists build a new impactor spacecraft and launch it at the oncoming asteroid. This is humanity’s only chance. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuy-hN-Cns">
+                                <rect key="frame" x="85.5" y="694.5" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="9rh-h4-6kJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="EBS-OG-4tA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jgf-Y4-57D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZkN-oY-GHa" firstAttribute="top" secondItem="JBu-Fr-63W" secondAttribute="top" constant="50" id="3u2-SP-a3H"/>
+                            <constraint firstItem="ZkN-oY-GHa" firstAttribute="centerX" secondItem="U84-Vf-rWp" secondAttribute="centerX" id="Aem-Cm-Fcy"/>
+                            <constraint firstItem="zuy-hN-Cns" firstAttribute="top" secondItem="ZkN-oY-GHa" secondAttribute="bottom" constant="75" id="b5h-SW-zRJ"/>
+                            <constraint firstItem="zuy-hN-Cns" firstAttribute="centerX" secondItem="U84-Vf-rWp" secondAttribute="centerX" id="nlV-5h-RIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JBu-Fr-63W"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W97-HC-TmC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mE-u0-GbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3492.753623188406" y="414.50892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MeX-Si-DJV">
+            <objects>
+                <viewController id="EBS-OG-4tA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUd-TF-3tj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vju-6O-K2l">
+                                <rect key="frame" x="57" y="94" width="300" height="578"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="IH2-zK-Iir"/>
+                                </constraints>
+                                <mutableString key="text">Our scientists predict you will have one hour to assemble the new impactor spacecraft before the asteroid has become too close to deflect.
+
+We don’t have the time to fly you to our assembly location - so you must use our new technology to interact remotely. Your actions will translate to our robotic assembly agents. 
+
+Please find an open area where you can work on assembly. Once there, you will open your camera and you will automatically connect to our facility and see all the parts you need. Assemble the impactor, correctly Agent. The world is counting on you. </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68G-fz-ezA">
+                                <rect key="frame" x="85.5" y="722" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="sJi-Ot-X7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xQa-r2-cKy" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="yhB-4Q-XGm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vju-6O-K2l" firstAttribute="top" secondItem="YYS-tf-BjE" secondAttribute="top" constant="50" id="Vds-MH-nKN"/>
+                            <constraint firstItem="68G-fz-ezA" firstAttribute="top" secondItem="Vju-6O-K2l" secondAttribute="bottom" constant="50" id="ht3-sm-EDa"/>
+                            <constraint firstItem="Vju-6O-K2l" firstAttribute="centerX" secondItem="bUd-TF-3tj" secondAttribute="centerX" id="j3H-J2-w0O"/>
+                            <constraint firstItem="68G-fz-ezA" firstAttribute="centerX" secondItem="bUd-TF-3tj" secondAttribute="centerX" id="l5e-n2-fVJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YYS-tf-BjE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YuA-tr-lnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4218.840579710145" y="414.50892857142856"/>
+        </scene>
+        <!--Mission Impact Details3-->
+        <scene sceneID="Akf-Q2-dd4">
+            <objects>
+                <viewController id="xQa-r2-cKy" customClass="MissionImpactDetails3" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6rC-6k-DJj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gX5-PO-3jm">
+                                <rect key="frame" x="57" y="94" width="300" height="394"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ezP-3g-bLa"/>
+                                </constraints>
+                                <string key="text">One last thing Agent.
+
+While you are working on assembly, if you look into the sky, we will enable you to track the asteroid and your time limit. 
+
+You will see the asteroid itself, and notice its progression as your time runs out.
+
+If you cannot make your deadline…
+
+Godspeed Agent.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWA-UK-tVp">
+                                <rect key="frame" x="85.5" y="538" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="6eK-8P-eTY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Open Camera">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="foA-NJ-JJc" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Zak-ad-4im"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EWA-UK-tVp" firstAttribute="centerX" secondItem="6rC-6k-DJj" secondAttribute="centerX" id="5nH-pT-CDW"/>
+                            <constraint firstItem="gX5-PO-3jm" firstAttribute="centerX" secondItem="6rC-6k-DJj" secondAttribute="centerX" id="9Hm-7b-eEr"/>
+                            <constraint firstItem="gX5-PO-3jm" firstAttribute="top" secondItem="QDT-4i-3g5" secondAttribute="top" constant="50" id="HUt-3J-w1F"/>
+                            <constraint firstItem="EWA-UK-tVp" firstAttribute="top" secondItem="gX5-PO-3jm" secondAttribute="bottom" constant="50" id="d8l-Oi-Ztk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QDT-4i-3g5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZg-bb-XFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="1110"/>
+        </scene>
+        <!--Camera View1-->
+        <scene sceneID="JVn-oY-yBL">
+            <objects>
+                <viewController id="foA-NJ-JJc" customClass="CameraView1" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z5u-Av-hmy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-fc-MaD">
+                                <rect key="frame" x="85.5" y="431" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="bgC-yN-Rh9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Camera/AR">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="oDt-Tw-CZP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HMB-0t-9m9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rSb-fc-MaD" firstAttribute="centerX" secondItem="z5u-Av-hmy" secondAttribute="centerX" id="lEA-c2-olI"/>
+                            <constraint firstItem="rSb-fc-MaD" firstAttribute="centerY" secondItem="z5u-Av-hmy" secondAttribute="centerY" id="tnp-s7-NId"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Q5-8q-tu6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Spp-EC-BfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="1110"/>
+        </scene>
+        <!--Mission Impact Math Screen-->
+        <scene sceneID="TWT-Y1-z43">
+            <objects>
+                <viewController id="oDt-Tw-CZP" customClass="MissionImpactMathScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bdi-7L-uWw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8t-Gj-8eo">
+                                <rect key="frame" x="57" y="94" width="300" height="557"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="uYV-a8-bGg"/>
+                                </constraints>
+                                <string key="text">Congratulations Agent!
+
+You have successfully assembled the impactor spacecraft!
+
+You must now launch the spacecraft to intercept and deflect the asteroid. 
+
+In order to complete a successful launch you will need to complete some calculations about time and fuel. Please run your calculations and we will make sure the spacecraft is tuned and fueled to your requirements.
+
+Don’t get this wrong Agent! Humanity is counting on you.
+
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9S-up-puF">
+                                <rect key="frame" x="85.5" y="675.5" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="Eui-il-NXj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Complete Calculations">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="axc-5c-hND" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="JYY-5u-E6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r8t-Gj-8eo" firstAttribute="centerX" secondItem="Bdi-7L-uWw" secondAttribute="centerX" id="5Bq-hy-oh8"/>
+                            <constraint firstItem="S9S-up-puF" firstAttribute="top" secondItem="r8t-Gj-8eo" secondAttribute="bottom" constant="30" id="7Qy-Hs-UNJ"/>
+                            <constraint firstItem="S9S-up-puF" firstAttribute="centerX" secondItem="Bdi-7L-uWw" secondAttribute="centerX" id="Tto-f6-Jot"/>
+                            <constraint firstItem="r8t-Gj-8eo" firstAttribute="top" secondItem="lxh-Mm-oHd" secondAttribute="top" constant="50" id="iLZ-hy-QWo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lxh-Mm-oHd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTZ-6A-bf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="1110"/>
+        </scene>
+        <!--Mission Impact Math Calc Screen-->
+        <scene sceneID="o7N-rm-7qt">
+            <objects>
+                <viewController id="axc-5c-hND" customClass="MissionImpactMathCalcScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yc7-Ou-4aE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqD-yi-T1D">
+                                <rect key="frame" x="57" y="94" width="300" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="UWY-GN-cTr"/>
+                                </constraints>
+                                <string key="text">To reach space and escape Earth's orbit, a rocket much achieve what is called "escape velocity" or roughly 11.2 kilometers per second.
+
+If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000 kilometers to reach the asteriod, how long will this take? (Use 2 decimal places).</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HcI-xY-5nG">
+                                <rect key="frame" x="57" y="334" width="65" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="TZ2-Pc-D53"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PuP-YM-4y8">
+                                <rect key="frame" x="57" y="507.5" width="64" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="zGu-Rv-M4z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2g-vb-uEg">
+                                <rect key="frame" x="129" y="340" width="52" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If our rocket burns 1000 gallons of fuel per second, how many gallons of fuel are needed for the mission?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXK-i5-n8s">
+                                <rect key="frame" x="57" y="418" width="300" height="64.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="caB-Wn-8Ie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoH-9L-Bdt">
+                                <rect key="frame" x="128" y="513.5" width="63.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-GC-gdD">
+                                <rect key="frame" x="85.5" y="591.5" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="COG-FK-xzN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue to Launch">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jRO-eb-Mps" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="C1L-U5-qal"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M2g-vb-uEg" firstAttribute="leading" secondItem="HcI-xY-5nG" secondAttribute="trailing" constant="7" id="0fb-n8-cv8"/>
+                            <constraint firstItem="GTv-GC-gdD" firstAttribute="top" secondItem="PuP-YM-4y8" secondAttribute="bottom" constant="50" id="4dl-NX-wQ4"/>
+                            <constraint firstItem="HcI-xY-5nG" firstAttribute="leading" secondItem="AZQ-Rd-ilQ" secondAttribute="leading" constant="57" id="5bD-XT-HE8"/>
+                            <constraint firstItem="M2g-vb-uEg" firstAttribute="leading" secondItem="HcI-xY-5nG" secondAttribute="trailing" constant="7" id="8W4-cv-2n1"/>
+                            <constraint firstItem="hoH-9L-Bdt" firstAttribute="top" secondItem="lXK-i5-n8s" secondAttribute="bottom" constant="31" id="8Yj-YG-zZH"/>
+                            <constraint firstItem="M2g-vb-uEg" firstAttribute="top" secondItem="IqD-yi-T1D" secondAttribute="bottom" constant="31" id="M04-PS-egi"/>
+                            <constraint firstItem="PuP-YM-4y8" firstAttribute="leading" secondItem="AZQ-Rd-ilQ" secondAttribute="leading" constant="57" id="Yjh-00-mEO"/>
+                            <constraint firstItem="lXK-i5-n8s" firstAttribute="top" secondItem="HcI-xY-5nG" secondAttribute="bottom" constant="50" id="YvT-ch-pgj"/>
+                            <constraint firstItem="IqD-yi-T1D" firstAttribute="top" secondItem="AZQ-Rd-ilQ" secondAttribute="top" constant="50" id="a3v-It-KWH"/>
+                            <constraint firstItem="HcI-xY-5nG" firstAttribute="top" secondItem="IqD-yi-T1D" secondAttribute="bottom" constant="25" id="a5U-9v-duL"/>
+                            <constraint firstItem="GTv-GC-gdD" firstAttribute="centerX" secondItem="Yc7-Ou-4aE" secondAttribute="centerX" id="dmb-lH-87m"/>
+                            <constraint firstItem="PuP-YM-4y8" firstAttribute="top" secondItem="lXK-i5-n8s" secondAttribute="bottom" constant="25" id="fgV-Em-1sW"/>
+                            <constraint firstItem="IqD-yi-T1D" firstAttribute="centerX" secondItem="Yc7-Ou-4aE" secondAttribute="centerX" id="h7R-T6-vul"/>
+                            <constraint firstItem="hoH-9L-Bdt" firstAttribute="leading" secondItem="PuP-YM-4y8" secondAttribute="trailing" constant="7" id="x8b-Lj-frc"/>
+                            <constraint firstItem="lXK-i5-n8s" firstAttribute="centerX" secondItem="Yc7-Ou-4aE" secondAttribute="centerX" id="z4i-UR-kDJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AZQ-Rd-ilQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4XZ-aS-D55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2167" y="1110"/>
+        </scene>
+        <!--Mission Impact Launch Screen-->
+        <scene sceneID="Wqh-xq-48I">
+            <objects>
+                <viewController id="jRO-eb-Mps" customClass="MissionImpactLaunchScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0oQ-I2-eZp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mz-oJ-SeF">
+                                <rect key="frame" x="85.5" y="431" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="Qcr-wq-Bep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Camera/Launch/AR">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="53I-bT-g6j" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="29Y-uC-i9G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Mz-oJ-SeF" firstAttribute="centerX" secondItem="0oQ-I2-eZp" secondAttribute="centerX" id="6g1-Y0-ZhA"/>
+                            <constraint firstItem="5Mz-oJ-SeF" firstAttribute="centerY" secondItem="0oQ-I2-eZp" secondAttribute="centerY" id="tQA-hJ-emY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CJk-cm-GHE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fve-MK-Mnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2919" y="1110"/>
+        </scene>
+        <!--Mission Impact Finale-->
+        <scene sceneID="3S5-gr-9UE">
+            <objects>
+                <viewController id="53I-bT-g6j" customClass="MissionImpactFinale" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5cW-co-sU5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbz-BZ-nY6">
+                                <rect key="frame" x="57" y="94" width="300" height="341.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HcF-0p-Qoo"/>
+                                </constraints>
+                                <string key="text">Agent! Mission accomplished!
+
+You have saved the world from the deadly impact of the asteroid! You can expect a promotion in your future!
+
+There are still a number of missions open Agent. We hope we can count on you to help us. Take some well deserved rest then let us know where you’d like to help out next. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52U-JQ-dly">
+                                <rect key="frame" x="85.5" y="485.5" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="B8o-Tl-SUT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back to HQ">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="KMe-7r-qE5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="52U-JQ-dly" firstAttribute="top" secondItem="Vbz-BZ-nY6" secondAttribute="bottom" constant="50" id="49W-ZD-dAI"/>
+                            <constraint firstItem="Vbz-BZ-nY6" firstAttribute="centerX" secondItem="5cW-co-sU5" secondAttribute="centerX" id="CD5-gR-RMe"/>
+                            <constraint firstItem="52U-JQ-dly" firstAttribute="centerX" secondItem="5cW-co-sU5" secondAttribute="centerX" id="Wy6-xF-YWh"/>
+                            <constraint firstItem="Vbz-BZ-nY6" firstAttribute="top" secondItem="VsT-aS-cdH" secondAttribute="top" constant="50" id="ZrN-3f-Nm9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VsT-aS-cdH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsx-8s-icn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3626" y="1110"/>
+        </scene>
+        <!--Mission Sound Wave Home Screen-->
+        <scene sceneID="2ze-RA-OzG">
+            <objects>
+                <viewController id="zLb-Ng-eg4" customClass="MissionSoundWaveHomeScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OeJ-vi-pNM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bTa-Ot-dcz">
+                                <rect key="frame" x="0.0" y="94" width="414" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Cc1-4M-u3f"/>
+                                    <constraint firstAttribute="height" constant="97" id="JTG-Kz-HUm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <string key="title">Code Name: SoundWave
+Level: Training </string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHN-Zq-jpF">
+                                <rect key="frame" x="57" y="221" width="300" height="368"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tNF-el-Qoh"/>
+                                </constraints>
+                                <string key="text">Congratulations Agent. 
+You have been accepted
+for the SoundWave
+training mission! 
+
+This is a very important 
+communication based 
+training mission. 
+
+Secret Agents are nothing 
+without their secrets and
+it’s time for you to learn 
+the art of speaking in 
+code.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2Qu-Jg-eRi">
+                                <rect key="frame" x="85.5" y="619" width="243" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="dch-Mf-x3f"/>
+                                    <constraint firstAttribute="width" constant="243" id="tIi-2u-GCw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <string key="title">Accept mission &amp;
+continue to briefing</string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="VFR-Vy-AEB" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="30s-sz-8Y0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Qu-Jg-eRi" firstAttribute="top" secondItem="JHN-Zq-jpF" secondAttribute="bottom" constant="30" id="BMu-6C-7JF"/>
+                            <constraint firstItem="JHN-Zq-jpF" firstAttribute="top" secondItem="bTa-Ot-dcz" secondAttribute="bottom" constant="30" id="D7P-Xw-fvN"/>
+                            <constraint firstItem="JHN-Zq-jpF" firstAttribute="centerX" secondItem="OeJ-vi-pNM" secondAttribute="centerX" id="InT-45-rEp"/>
+                            <constraint firstItem="bTa-Ot-dcz" firstAttribute="top" secondItem="Yec-gn-6aR" secondAttribute="top" constant="50" id="Ts0-4y-UVj"/>
+                            <constraint firstItem="bTa-Ot-dcz" firstAttribute="centerX" secondItem="OeJ-vi-pNM" secondAttribute="centerX" id="hgD-ff-WOn"/>
+                            <constraint firstItem="2Qu-Jg-eRi" firstAttribute="centerX" secondItem="OeJ-vi-pNM" secondAttribute="centerX" id="ogy-j5-gJl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yec-gn-6aR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9e-In-rmG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-366"/>
+        </scene>
+        <!--Mission Sound Wave Details1-->
+        <scene sceneID="q36-ia-371">
+            <objects>
+                <viewController id="VFR-Vy-AEB" customClass="MissionSoundWaveDetails1" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yBK-0V-9Jn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BF-bd-BRS">
+                                <rect key="frame" x="57" y="94" width="300" height="499"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2EY-M4-1G4"/>
+                                </constraints>
+                                <mutableString key="text">Stegonography is the practice of hiding a message inside of some form of media. This could mean hiding a message inside of a painting or a song. 
+
+For this mission, you will practice stenography with audio samples, to learn how to both encode a message and detect a message.
+
+You will be given a sample audio file. Your first task is to encode a hidden value into the audio file.
+
+Agent, your missions are not the place to play a game of telephone. A poorly encoded message can be the difference between life and death! </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3M3-sA-KX3">
+                                <rect key="frame" x="85.5" y="643.5" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="YuI-85-xcP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Q5T-ru-CHo" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Ugz-48-QFD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1BF-bd-BRS" firstAttribute="centerX" secondItem="yBK-0V-9Jn" secondAttribute="centerX" id="0Lb-DC-acd"/>
+                            <constraint firstItem="3M3-sA-KX3" firstAttribute="top" secondItem="1BF-bd-BRS" secondAttribute="bottom" constant="50.5" id="ID8-zl-Yh1"/>
+                            <constraint firstItem="1BF-bd-BRS" firstAttribute="top" secondItem="dVi-mE-AUR" secondAttribute="top" constant="50" id="Pdg-F8-byP"/>
+                            <constraint firstItem="3M3-sA-KX3" firstAttribute="centerX" secondItem="yBK-0V-9Jn" secondAttribute="centerX" id="oi6-Ig-S4H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dVi-mE-AUR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYL-c7-Qh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520" y="-366"/>
+        </scene>
+        <!--Mission Sound Wave Access Audio-->
+        <scene sceneID="b1f-EE-B13">
+            <objects>
+                <viewController id="Q5T-ru-CHo" customClass="MissionSoundWaveAccessAudio" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pq0-ZS-Q5r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDl-nj-Hyc">
+                                <rect key="frame" x="57" y="94" width="300" height="315.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="X2W-r6-MDw"/>
+                                </constraints>
+                                <string key="text">Agent, here is your sample audio file in unaltered format. 
+
+When you open it, you will both hear the sample and see the sound wave representation of the audio.
+
+Become familiar with both the sound and the sight of your sample. This is will be critical later on. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDH-Qt-LNf">
+                                <rect key="frame" x="85.5" y="459.5" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="HlJ-qJ-RfJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Access Audio">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="bI6-vU-noJ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="N7y-Dh-mCo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JDH-Qt-LNf" firstAttribute="centerX" secondItem="pq0-ZS-Q5r" secondAttribute="centerX" id="Ubl-oZ-jvV"/>
+                            <constraint firstItem="BDl-nj-Hyc" firstAttribute="centerX" secondItem="pq0-ZS-Q5r" secondAttribute="centerX" id="feq-ym-ss8"/>
+                            <constraint firstItem="BDl-nj-Hyc" firstAttribute="top" secondItem="VVW-DY-X0U" secondAttribute="top" constant="50" id="lLk-jY-Tc3"/>
+                            <constraint firstItem="JDH-Qt-LNf" firstAttribute="top" secondItem="BDl-nj-Hyc" secondAttribute="bottom" constant="50" id="pZ2-N0-xU0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VVW-DY-X0U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEI-tU-623" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2229" y="-362"/>
+        </scene>
+        <!--Mission Sound Wave Show Wave1-->
+        <scene sceneID="Q4B-dv-sJa">
+            <objects>
+                <viewController id="bI6-vU-noJ" customClass="MissionSoundWaveShowWave1" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GM2-pf-gpt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SJ6-zJ-FZa">
+                                <rect key="frame" x="85.5" y="399.5" width="243" height="97"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="qem-GP-Qof"/>
+                                    <constraint firstAttribute="width" constant="243" id="usi-R0-8EN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Camera View/Show Sound Wave">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ifd-0h-gAE" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BK0-9H-NXk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SJ6-zJ-FZa" firstAttribute="centerY" secondItem="GM2-pf-gpt" secondAttribute="centerY" id="BsM-Cp-w4P"/>
+                            <constraint firstItem="SJ6-zJ-FZa" firstAttribute="centerX" secondItem="GM2-pf-gpt" secondAttribute="centerX" id="Tg1-Pa-pgE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jRj-fu-JPU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vg4-Jc-bOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2908.6956521739135" y="-363.61607142857139"/>
+        </scene>
+        <!--Mission Sound Wave Encode-->
+        <scene sceneID="0HY-k9-QCI">
+            <objects>
+                <viewController id="ifd-0h-gAE" customClass="MissionSoundWaveEncode" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCe-Yy-TDK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-dO-6Px">
+                                <rect key="frame" x="57" y="94" width="300" height="368"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1Ji-EH-RBZ"/>
+                                </constraints>
+                                <string key="text">Now Agent, you must hide a hidden message inside your audio sample. We will start simply with a numeric value. This is the bank account number of very important figure. If we cannot hide this value properly, millions of dollars will be lost. Complete the follow formulas to encode the message.
+
+(Encoding math - simplified here)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-Sa-srv">
+                                <rect key="frame" x="85.5" y="512" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="vVS-ap-kBD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="LHQ-WH-LGN" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="f76-fY-TOt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qc3-dO-6Px" firstAttribute="centerX" secondItem="KCe-Yy-TDK" secondAttribute="centerX" id="A3Q-Eq-Kxd"/>
+                            <constraint firstItem="Qc3-dO-6Px" firstAttribute="top" secondItem="F9f-7h-8oH" secondAttribute="top" constant="50" id="Qub-c6-4AZ"/>
+                            <constraint firstItem="Mnc-Sa-srv" firstAttribute="centerX" secondItem="KCe-Yy-TDK" secondAttribute="centerX" id="cW1-jH-gN5"/>
+                            <constraint firstItem="Mnc-Sa-srv" firstAttribute="top" secondItem="Qc3-dO-6Px" secondAttribute="bottom" constant="50" id="kY1-GH-SjC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F9f-7h-8oH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8s-Yg-tbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3625" y="-369"/>
+        </scene>
+        <!--Mission Sound Wave Compare Details-->
+        <scene sceneID="V4C-hA-3nd">
+            <objects>
+                <viewController id="LHQ-WH-LGN" customClass="MissionSoundWaveCompareDetails" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NTS-sj-sU9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7G-cJ-w4F">
+                                <rect key="frame" x="57" y="94" width="300" height="236.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1Aq-4g-X2d"/>
+                                </constraints>
+                                <string key="text">Fantastic Agent. You have now encoded your first hidden message. In order to see how this effects the original audio sample, you will now compare the two sound waves. Can you spot any difference? Walk around them, zoom in, compare them from every angle. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqX-Mo-gJI">
+                                <rect key="frame" x="85.5" y="380.5" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="Svg-u9-U6w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Compare Sound Waves">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8eF-Od-OcQ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="tUn-7k-vkA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x7G-cJ-w4F" firstAttribute="centerX" secondItem="NTS-sj-sU9" secondAttribute="centerX" id="2ze-b6-4Qc"/>
+                            <constraint firstItem="x7G-cJ-w4F" firstAttribute="top" secondItem="n1L-EI-EBr" secondAttribute="top" constant="50" id="bqL-cn-rlG"/>
+                            <constraint firstItem="tqX-Mo-gJI" firstAttribute="centerX" secondItem="NTS-sj-sU9" secondAttribute="centerX" id="m4X-nA-8lo"/>
+                            <constraint firstItem="tqX-Mo-gJI" firstAttribute="top" secondItem="x7G-cJ-w4F" secondAttribute="bottom" constant="50" id="rPf-6i-VJB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n1L-EI-EBr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2w-LM-mYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4348" y="-371"/>
+        </scene>
+        <!--Mission Sound WaveAR2-->
+        <scene sceneID="pvq-5c-M2C">
+            <objects>
+                <viewController id="8eF-Od-OcQ" customClass="MissionSoundWaveAR2" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3gr-IS-HTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tNn-h6-j6E">
+                                <rect key="frame" x="85.5" y="399.5" width="243" height="97"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="jgM-cu-2z8"/>
+                                    <constraint firstAttribute="width" constant="243" id="wU5-m7-2Hv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Camera View/Compare Sound Waves">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="i1l-hQ-i5v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="PO5-Ii-8Ta"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tNn-h6-j6E" firstAttribute="centerX" secondItem="3gr-IS-HTJ" secondAttribute="centerX" id="WGs-Au-9Rv"/>
+                            <constraint firstItem="tNn-h6-j6E" firstAttribute="centerY" secondItem="3gr-IS-HTJ" secondAttribute="centerY" id="Y8F-6b-gLE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RZm-hB-DSW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1c-Aa-cMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5072" y="-376"/>
+        </scene>
+        <!--Mission Sound Wave Finale-->
+        <scene sceneID="9Yz-Hx-d4r">
+            <objects>
+                <viewController id="i1l-hQ-i5v" customClass="MissionSoundWaveFinale" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lvz-Dv-ivU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpd-WP-rnZ">
+                                <rect key="frame" x="57" y="94" width="300" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Gw3-QL-ar4"/>
+                                </constraints>
+                                <string key="text">Great job Agent! You have earned a new skill, which will unlock new missions! We hope you are ready for the tasks ahead. The world might depend on you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIT-pv-oZU">
+                                <rect key="frame" x="85.5" y="302" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="Kwa-ph-EWe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back to HQ">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Hfp-BD-Wxx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KIT-pv-oZU" firstAttribute="centerX" secondItem="lvz-Dv-ivU" secondAttribute="centerX" id="7v1-mD-Aet"/>
+                            <constraint firstItem="rpd-WP-rnZ" firstAttribute="centerX" secondItem="lvz-Dv-ivU" secondAttribute="centerX" id="8tR-L3-nBv"/>
+                            <constraint firstItem="KIT-pv-oZU" firstAttribute="top" secondItem="rpd-WP-rnZ" secondAttribute="bottom" constant="50" id="Z1j-0X-kH6"/>
+                            <constraint firstItem="rpd-WP-rnZ" firstAttribute="top" secondItem="nY2-Y9-nUp" secondAttribute="top" constant="50" id="ict-oL-chI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nY2-Y9-nUp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKq-Zr-TwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="-1210"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BK0-9H-NXk"/>
+        <segue reference="Hfp-BD-Wxx"/>
+    </inferredMetricsTieBreakers>
+</document>
