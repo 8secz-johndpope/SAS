@@ -9,11 +9,15 @@
 import UIKit
 
 class MissionImpactDetails3: UIViewController {
-
+    
+    
+    @IBOutlet weak var OpenCamera1: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
     
 
@@ -26,5 +30,11 @@ class MissionImpactDetails3: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
+    @IBAction func openCameraTapped(_ sender: Any) {
+        print("Open Camera Tapped")
+        
+    }
+    
 }

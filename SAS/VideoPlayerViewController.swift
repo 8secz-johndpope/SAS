@@ -6,7 +6,7 @@
 //  Copyright © 2019 Lauren Saxton. All rights reserved.
 //
 
-// citation/reference for the code presented in this file:
+// citation/reference for the code presented in this file (ALL lines):
 // https://stackoverflow.com/questions/45886278/embedding-a-local-video-into-a-uiview
 // answers by: Alan S and Abdelahad Darwish
 // stack overflow is under the creative commons license
@@ -16,6 +16,7 @@
 // https://www.pexels.com/photo-license/ (free use)
 
 
+// BEGIN CODE with citation
 import UIKit
 import AVKit
 
@@ -36,3 +37,4 @@ class VideoPlayerViewController: AVPlayerViewController {
     }
     
 }
+// END CODE with citation

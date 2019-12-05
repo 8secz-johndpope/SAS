@@ -4,7 +4,7 @@
 //
 //  Created by Lauren Saxton on 11/16/19.
 //  Copyright © 2019 Lauren Saxton. All rights reserved.
-//
+//  For references used in general rocket knowledge see the "references.rtf" file
 
 import UIKit
 
@@ -28,3 +28,4 @@ class MissionImpactDetails1: UIViewController {
     */
 
 }
+
