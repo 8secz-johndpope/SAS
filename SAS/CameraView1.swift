@@ -38,19 +38,24 @@ class CameraView1: UIViewController, ARSCNViewDelegate {
          
          let rw_subScene = SCNScene(named: "art.scnassets/rwing.scn")!
          let rwing = rw_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
-         rwing.name = "rwing"
         
          let lw_subScene = SCNScene(named: "art.scnassets/lwing.scn")!
          let lwing = lw_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
-         lwing.name = "lwing"
          
          let rf_subScene = SCNScene(named: "art.scnassets/rfin.scn")!
          let rfin = rf_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
-         rfin.name = "rfin"
         
          let lf_subScene = SCNScene(named: "art.scnassets/lfin.scn")!
          let lfin = lf_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
          lfin.name = "lfin"
+        
+         //BEGIN code with citation - naming nodes
+         // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
+         rwing.name = "rwing"
+         lwing.name = "lwing"
+         rfin.name = "rfin"
+         lfin.name = "lfin"
+         //END code with citation - naming nodes
         
          //BEGIN code with citation - how to position things code
          // https://blog.markdaws.net/arkit-by-example-part1-7830677ef84d
