@@ -37,16 +37,16 @@ class CameraView1: UIViewController, ARSCNViewDelegate {
          // https://stackoverflow.com/questions/28655395/scenekit-display-multiple-scenes-in-same-scnview
          
          let rw_subScene = SCNScene(named: "art.scnassets/rwing.scn")!
-         let rwing = rw_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
+         let rwing = rw_subScene.rootNode.childNode(withName: "rwing", recursively: true)!
         
          let lw_subScene = SCNScene(named: "art.scnassets/lwing.scn")!
-         let lwing = lw_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
+         let lwing = lw_subScene.rootNode.childNode(withName: "lwing", recursively: true)!
          
          let rf_subScene = SCNScene(named: "art.scnassets/rfin.scn")!
-         let rfin = rf_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
+         let rfin = rf_subScene.rootNode.childNode(withName: "rfin", recursively: true)!
         
          let lf_subScene = SCNScene(named: "art.scnassets/lfin.scn")!
-         let lfin = lf_subScene.rootNode.childNode(withName: "shipMesh", recursively: true)!
+         let lfin = lf_subScene.rootNode.childNode(withName: "lfin", recursively: true)!
          lfin.name = "lfin"
         
          //BEGIN code with citation - naming nodes
@@ -86,7 +86,37 @@ class CameraView1: UIViewController, ARSCNViewDelegate {
          let configuration = ARWorldTrackingConfiguration()
          configuration.planeDetection = .horizontal
          sceneView.session.run(configuration)
+        
+         //BEGIN code with citation - UITap
+         // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
+         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+         sceneView.addGestureRecognizer(gestureRecognizer)
+         //END code with citation - UITap
      }
+
+ //BEGIN code with citation - Tapped function
+ // https://stackoverflow.com/questions/56393370/is-there-anyway-to-identify-the-touched-node-in-arkit
+ @objc func tapped(recognizer: UIGestureRecognizer) {
+     guard let sceneView = recognizer.view as? SCNView else { return }
+     let touchLocation = recognizer.location(in: sceneView)
+
+     let results = sceneView.hitTest(touchLocation, options: [:])
+
+     if results.count == 1 {
+         let node = results[0].node
+         if node.name == "rwing" {
+             print("rwing")
+         } else if node.name == "lwing" {
+             print("lwing")
+         } else if node.name == "rfin" {
+             print("rfin")
+         } else if node.name == "lfin" {
+             print("lfin")
+        }
+     }
+ }
+ //END code with citation - tapped function
+    
     
  }
 //END CODE with citation - basic setup
