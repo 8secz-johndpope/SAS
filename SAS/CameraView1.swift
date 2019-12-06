@@ -18,6 +18,9 @@ import ARKit
 //https://stackoverflow.com/questions/45342327/how-to-add-arkit-in-single-view-application
 class CameraView1: UIViewController, ARSCNViewDelegate {
 //END CODE with citation
+
+var empty_node = SCNNode()
+var current_node = SCNNode()
     
 // BEGIN CODE with citation - basic setup
 // code citation for all lines from here to end of "viewWillAppear", unless otherwise marked
@@ -87,14 +90,20 @@ class CameraView1: UIViewController, ARSCNViewDelegate {
          configuration.planeDetection = .horizontal
          sceneView.session.run(configuration)
         
-         //BEGIN code with citation - UITap
+         //BEGIN code with citation - UITap and double tapp
          // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
          let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
          sceneView.addGestureRecognizer(gestureRecognizer)
+        
+         let doubleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+         doubleTapGestureRecognizer.numberOfTapsRequired = 2
+         gestureRecognizer.require(toFail: doubleTapGestureRecognizer)
+
+         sceneView.addGestureRecognizer(doubleTapGestureRecognizer)
          //END code with citation - UITap
      }
 
- //BEGIN code with citation - Tapped function
+ //BEGIN code with citation - Tapped, double tapped, and animate functions
  // https://stackoverflow.com/questions/56393370/is-there-anyway-to-identify-the-touched-node-in-arkit
  @objc func tapped(recognizer: UIGestureRecognizer) {
      guard let sceneView = recognizer.view as? SCNView else { return }
@@ -106,17 +115,44 @@ class CameraView1: UIViewController, ARSCNViewDelegate {
          let node = results[0].node
          if node.name == "rwing" {
              print("rwing")
+             current_node = node
          } else if node.name == "lwing" {
              print("lwing")
+             current_node = node
          } else if node.name == "rfin" {
              print("rfin")
+             current_node = node
          } else if node.name == "lfin" {
              print("lfin")
+             current_node = node
         }
      }
  }
- //END code with citation - tapped function
     
+ @objc func doubleTapped(recognizer: UIGestureRecognizer) {
+     // Get exact position where touch happened on screen of iPhone (2D coordinate)
+     print("In double tap, current node is", current_node.name)
+     let touchPosition = recognizer.location(in: sceneView)
+
+     // Conduct hit test on tapped point
+     let hitTestResult = sceneView.hitTest(touchPosition, types: .featurePoint)
+
+     guard let hitResult = hitTestResult.first else {
+         return
+     }
+     
+     if current_node.name != nil {
+        let move_position = SCNVector3(hitResult.worldTransform.columns.3.x,hitResult.worldTransform.columns.3.y, hitResult.worldTransform.columns.3.z)
+        animateRockerPiece(to: move_position, node: current_node)
+        current_node = empty_node
+        }
+     }
+    
+    private func animateRockerPiece(to destinationPoint: SCNVector3, node: SCNNode) {
+        let action = SCNAction.move(to: destinationPoint, duration: 7)
+        node.runAction(action)
+    }
+ //END code with citation - Tapped, double tapped, and animate functions
     
  }
 //END CODE with citation - basic setup
