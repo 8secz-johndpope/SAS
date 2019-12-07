@@ -780,8 +780,8 @@ You must now launch the spacecraft to intercept and deflect the asteroid. </stri
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8t-Gj-8eo">
-                                <rect key="frame" x="57" y="94" width="300" height="557"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8t-Gj-8eo">
+                                <rect key="frame" x="57" y="94" width="300" height="368"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="uYV-a8-bGg"/>
                                 </constraints>
@@ -940,10 +940,10 @@ If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mz-oJ-SeF">
-                                <rect key="frame" x="85.5" y="431" width="243" height="34"/>
+                                <rect key="frame" x="57" y="431" width="300" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="243" id="Qcr-wq-Bep"/>
+                                    <constraint firstAttribute="width" constant="300" id="Qcr-wq-Bep"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Camera/Launch/AR">
@@ -958,6 +958,10 @@ If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000
                                     <segue destination="53I-bT-g6j" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="29Y-uC-i9G"/>
                                 </connections>
                             </button>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="saW-1s-7in">
+                                <rect key="frame" x="57" y="107" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

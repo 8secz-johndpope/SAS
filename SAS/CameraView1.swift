@@ -133,12 +133,15 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
         //END code with citation - text node
      }
     
+    //BEGIN code with citation - configs and debug
+    // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
      override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
          sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
          let configuration = ARWorldTrackingConfiguration()
          configuration.planeDetection = .horizontal
          sceneView.session.run(configuration)
+    //END code with citation - configs and debug
         
          //BEGIN code with citation - UITap and double tapp
          // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
@@ -200,9 +203,12 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
         rfin.runAction(rfin_action)
         lfin.runAction(lfin_action)
         
+        //BEGIN code with citation - delay functions in swift
+        // https://stackoverflow.com/questions/28821722/delaying-function-in-swift
         DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: {
             self.sceneView.removeFromSuperview()
         })
+        //End code with citation - delay function in swift
     }
     
  @objc func doubleTapped(recognizer: UIGestureRecognizer) {
