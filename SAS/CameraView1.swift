@@ -21,6 +21,15 @@ class CameraView1: UIViewController, ARSCNViewDelegate {
 
 var empty_node = SCNNode()
 var current_node = SCNNode()
+
+//BEGIN code with citation - text node
+// https://stackoverflow.com/questions/35733916/changing-the-value-of-string-on-scntext-produces-no-change
+//AND
+// https://stackoverflow.com/questions/50591866/how-to-point-and-position-arkit-text
+let textNode = SCNNode()
+var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
+//BEGIN code with citation - text node
+    
     
 // BEGIN CODE with citation - basic setup
 // code citation for all lines from here to end of "viewWillAppear", unless otherwise marked
@@ -62,10 +71,10 @@ var current_node = SCNNode()
         
          //BEGIN code with citation - how to position things code
          // https://blog.markdaws.net/arkit-by-example-part1-7830677ef84d
-         rwing.position = SCNVector3Make(0.3, 0.1, -1.0);
-         lwing.position = SCNVector3Make(0.3, 0.1, -1.0);
-         rfin.position = SCNVector3Make(0, 0.2, -1.5);
-         lfin.position = SCNVector3Make(0.2, 0.2, -1.5);
+         rwing.position = SCNVector3Make(0.3, -0.2, -1.0);
+         lwing.position = SCNVector3Make(0.3, -0.2, -1.0);
+         rfin.position = SCNVector3Make(0, -0.2, -1.5);
+         lfin.position = SCNVector3Make(0.2, -0.2, -1.5);
          //END CODE with citation - how to position things code
         
          sceneView.scene.rootNode.addChildNode(rwing)
@@ -81,6 +90,26 @@ var current_node = SCNNode()
          lwing.eulerAngles.x = -99
          rwing.eulerAngles.x = -99
          // END code - how to rotate objects
+        
+        //BEGIN code with citation - text node
+        // https://stackoverflow.com/questions/35733916/changing-the-value-of-string-on-scntext-produces-no-change
+         //AND
+         // https://stackoverflow.com/questions/50591866/how-to-point-and-position-arkit-text
+         textGeometry.font = UIFont(name: "Helvatica", size: 1)
+         textGeometry.flatness = 0
+         textGeometry.firstMaterial?.diffuse.contents = UIColor.blue
+         textNode.geometry = textGeometry
+         let min = textNode.boundingBox.min
+         let max = textNode.boundingBox.max
+         textNode.pivot = SCNMatrix4MakeTranslation(
+             min.x + (max.x - min.x)/2,
+             min.y + (max.y - min.y)/2,
+             min.z + (max.z - min.z)/2
+         )
+         textNode.scale = SCNVector3(0.005, 0.005 , 0.005)
+         sceneView.scene.rootNode.addChildNode(textNode)
+         textNode.position = SCNVector3Make(0.2, 0.2, -2.0);
+        //END code with citation - text node
      }
     
      override func viewWillAppear(_ animated: Bool) {
@@ -110,23 +139,26 @@ var current_node = SCNNode()
      let touchLocation = recognizer.location(in: sceneView)
 
      let results = sceneView.hitTest(touchLocation, options: [:])
-
-     if results.count == 1 {
-         let node = results[0].node
-         if node.name == "rwing" {
-             print("rwing")
-             current_node = node
-         } else if node.name == "lwing" {
-             print("lwing")
-             current_node = node
-         } else if node.name == "rfin" {
-             print("rfin")
-             current_node = node
-         } else if node.name == "lfin" {
-             print("lfin")
-             current_node = node
+    
+    //BEGIN code with citation - for each loops
+    // https://www.avanderlee.com/swift/loops-swift/
+     for result in results {
+        let name = result.node.name
+        print(name)
+        if name == nil {
+            textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
+            textNode.geometry = textGeometry
+            continue
         }
-     }
+        if name == "lwing" || name == "rwing" || name == "rfin" || name == "lfin" {
+            current_node = result.node
+            textGeometry = SCNText(string: "Target is " + (result.node.name ?? "None") ?? "None", extrusionDepth: 1)
+            textNode.geometry = textGeometry
+            break
+        }
+    }
+    //END code with citation - for each loops
+     
  }
     
  @objc func doubleTapped(recognizer: UIGestureRecognizer) {
@@ -145,6 +177,8 @@ var current_node = SCNNode()
         let move_position = SCNVector3(hitResult.worldTransform.columns.3.x,hitResult.worldTransform.columns.3.y, hitResult.worldTransform.columns.3.z)
         animateRockerPiece(to: move_position, node: current_node)
         current_node = empty_node
+        textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
+        textNode.geometry = textGeometry
         }
      }
     
