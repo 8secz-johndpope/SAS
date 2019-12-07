@@ -133,16 +133,28 @@ Level: Critical </string>
                                                     <segue destination="Af5-iv-mpD" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="LEN-QI-EX3"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-hq-C6h">
+                                                <rect key="frame" x="138" y="687" width="138" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="Requirements">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="xgQ-J0-qhe" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="K3B-1Z-z9S"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="VW9-df-f19" firstAttribute="centerY" secondItem="qZ8-W0-XQJ" secondAttribute="centerY" multiplier="0.15" id="1tF-aJ-HZF"/>
                                             <constraint firstAttribute="bottom" secondItem="QmM-EG-oRG" secondAttribute="bottom" constant="222" id="7gc-3X-uVG"/>
+                                            <constraint firstItem="OVV-hq-C6h" firstAttribute="centerX" secondItem="qZ8-W0-XQJ" secondAttribute="centerX" id="9oa-3n-76K"/>
                                             <constraint firstItem="hUk-Wc-RIA" firstAttribute="centerX" secondItem="qZ8-W0-XQJ" secondAttribute="centerX" id="F5Q-Yo-wKX"/>
                                             <constraint firstItem="VW9-df-f19" firstAttribute="centerX" secondItem="qZ8-W0-XQJ" secondAttribute="centerX" id="KOS-8I-C2H"/>
                                             <constraint firstItem="QmM-EG-oRG" firstAttribute="top" secondItem="pxM-aE-Feq" secondAttribute="bottom" constant="60" id="O0b-YK-Lsa"/>
                                             <constraint firstItem="pxM-aE-Feq" firstAttribute="top" secondItem="uHD-i9-CcR" secondAttribute="bottom" constant="60" id="Obi-bp-0M8"/>
                                             <constraint firstItem="hUk-Wc-RIA" firstAttribute="top" secondItem="VW9-df-f19" secondAttribute="bottom" constant="30" id="OtZ-Qg-l5W"/>
+                                            <constraint firstItem="OVV-hq-C6h" firstAttribute="top" secondItem="QmM-EG-oRG" secondAttribute="bottom" constant="30" id="VdC-q6-SBm"/>
                                             <constraint firstItem="uHD-i9-CcR" firstAttribute="centerX" secondItem="qZ8-W0-XQJ" secondAttribute="centerX" id="XUS-8E-FLO"/>
                                             <constraint firstItem="pxM-aE-Feq" firstAttribute="centerX" secondItem="qZ8-W0-XQJ" secondAttribute="centerX" id="qhT-kd-ZON"/>
                                             <constraint firstItem="uHD-i9-CcR" firstAttribute="top" secondItem="hUk-Wc-RIA" secondAttribute="bottom" constant="60" id="shI-pC-KLx"/>
@@ -1031,6 +1043,61 @@ There are still a number of missions open Agent. We hope we can count on you to 
             </objects>
             <point key="canvasLocation" x="3626" y="1110"/>
         </scene>
+        <!--Requirements Screen-->
+        <scene sceneID="4iO-qn-nNi">
+            <objects>
+                <viewController id="xgQ-J0-qhe" customClass="RequirementsScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jrt-8P-XK2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwB-qf-qo0">
+                                <rect key="frame" x="57" y="132" width="300" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="bU5-CA-Z3V"/>
+                                </constraints>
+                                <string key="text">These missions will require at least middle school literacy levels, basic math  and problem skills to include arithmetic. 
+
+You need nothing other than your device.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6X7-Y1-0fT">
+                                <rect key="frame" x="85.5" y="399.5" width="243" height="97"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="WNE-lR-ABc"/>
+                                    <constraint firstAttribute="width" constant="243" id="YMk-iJ-dkJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back to HQ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="aiw-dW-Rhy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6X7-Y1-0fT" firstAttribute="centerY" secondItem="Jrt-8P-XK2" secondAttribute="centerY" id="Emc-ed-Yjc"/>
+                            <constraint firstItem="6X7-Y1-0fT" firstAttribute="centerX" secondItem="Jrt-8P-XK2" secondAttribute="centerX" id="emo-oo-GxC"/>
+                            <constraint firstItem="qwB-qf-qo0" firstAttribute="centerY" secondItem="Jrt-8P-XK2" secondAttribute="centerY" multiplier="0.5" id="rdj-Ma-qXs"/>
+                            <constraint firstItem="qwB-qf-qo0" firstAttribute="centerX" secondItem="Jrt-8P-XK2" secondAttribute="centerX" id="vyH-77-Ucn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oUn-9V-eWW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSC-jH-Ghf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200" y="-396"/>
+        </scene>
         <!--Mission Sound Wave Home Screen-->
         <scene sceneID="2ze-RA-OzG">
             <objects>
@@ -1073,7 +1140,7 @@ it’s time for you to learn
 the art of speaking in 
 code.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2Qu-Jg-eRi">
@@ -1471,6 +1538,6 @@ Become familiar with both the sound and the sight of your sample. This is will b
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ojW-EY-7sN"/>
+        <segue reference="aiw-dW-Rhy"/>
     </inferredMetricsTieBreakers>
 </document>
