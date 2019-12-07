@@ -718,14 +718,14 @@ If you cannot make your deadline…</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-fc-MaD">
-                                <rect key="frame" x="85.5" y="44" width="243" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-fc-MaD">
+                                <rect key="frame" x="57" y="333" width="300" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="243" id="bgC-yN-Rh9"/>
+                                    <constraint firstAttribute="width" constant="300" id="bgC-yN-Rh9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Camera/AR">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -737,16 +737,33 @@ If you cannot make your deadline…</string>
                                     <segue destination="oDt-Tw-CZP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="HMB-0t-9m9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWS-cj-CCQ">
+                                <rect key="frame" x="57" y="130.5" width="300" height="142.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GOc-nJ-5iL"/>
+                                </constraints>
+                                <string key="text">Congratulations Agent!
+
+You have successfully assembled the impactor spacecraft!
+
+You must now launch the spacecraft to intercept and deflect the asteroid. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAX-QE-YCJ">
-                                <rect key="frame" x="20" y="229" width="374" height="584"/>
+                                <rect key="frame" x="108" y="447" width="221" height="225"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="rSb-fc-MaD" firstAttribute="top" secondItem="aWS-cj-CCQ" secondAttribute="bottom" constant="60" id="D4c-Yj-bQD"/>
+                            <constraint firstItem="aWS-cj-CCQ" firstAttribute="centerX" secondItem="z5u-Av-hmy" secondAttribute="centerX" id="EAV-1O-qNf"/>
+                            <constraint firstItem="eAX-QE-YCJ" firstAttribute="top" secondItem="rSb-fc-MaD" secondAttribute="bottom" constant="80" id="Px6-cp-MJv"/>
                             <constraint firstItem="eAX-QE-YCJ" firstAttribute="centerX" secondItem="8Q5-8q-tu6" secondAttribute="centerX" id="TBz-9B-YuQ"/>
-                            <constraint firstItem="8Q5-8q-tu6" firstAttribute="bottom" secondItem="eAX-QE-YCJ" secondAttribute="bottom" constant="49" id="flW-9B-6u9"/>
+                            <constraint firstItem="aWS-cj-CCQ" firstAttribute="centerY" secondItem="z5u-Av-hmy" secondAttribute="centerY" multiplier="0.45" id="Ygb-pm-iKU"/>
                             <constraint firstItem="rSb-fc-MaD" firstAttribute="centerX" secondItem="z5u-Av-hmy" secondAttribute="centerX" id="lEA-c2-olI"/>
-                            <constraint firstItem="eAX-QE-YCJ" firstAttribute="top" secondItem="rSb-fc-MaD" secondAttribute="bottom" constant="100" id="tsV-yL-teX"/>
+                            <constraint firstItem="8Q5-8q-tu6" firstAttribute="bottom" secondItem="eAX-QE-YCJ" secondAttribute="bottom" constant="190" id="ntl-kP-dfj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Q5-8q-tu6"/>
                     </view>
@@ -768,13 +785,7 @@ If you cannot make your deadline…</string>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="uYV-a8-bGg"/>
                                 </constraints>
-                                <string key="text">Congratulations Agent!
-
-You have successfully assembled the impactor spacecraft!
-
-You must now launch the spacecraft to intercept and deflect the asteroid. 
-
-In order to complete a successful launch you will need to complete some calculations about time and fuel. Please run your calculations and we will make sure the spacecraft is tuned and fueled to your requirements.
+                                <string key="text">In order to complete a successful launch you will need to complete some calculations about time and fuel. Please run your calculations and we will make sure the spacecraft is tuned and fueled to your requirements.
 
 Don’t get this wrong Agent! Humanity is counting on you.
 
@@ -785,7 +796,7 @@ Don’t get this wrong Agent! Humanity is counting on you.
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9S-up-puF">
-                                <rect key="frame" x="85.5" y="675.5" width="243" height="34"/>
+                                <rect key="frame" x="85.5" y="492" width="243" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="243" id="Eui-il-NXj"/>

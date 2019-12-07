@@ -201,9 +201,7 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
         lfin.runAction(lfin_action)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: {
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MissionImpactMathScreen") as! MissionImpactMathScreen
-            self.present(nextViewController, animated:true, completion:nil)
+            self.sceneView.removeFromSuperview()
         })
     }
     
