@@ -134,8 +134,8 @@ Level: Critical </string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-hq-C6h">
-                                                <rect key="frame" x="138" y="687" width="138" height="40"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <rect key="frame" x="146.5" y="687" width="121" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Requirements">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
@@ -1028,13 +1028,25 @@ There are still a number of missions open Agent. We hope we can count on you to 
                                     <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="KMe-7r-qE5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMv-zt-7dP">
+                                <rect key="frame" x="144" y="580" width="126" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="About the App">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ddq-cE-dR9" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="EHO-b8-Eh0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="52U-JQ-dly" firstAttribute="top" secondItem="Vbz-BZ-nY6" secondAttribute="bottom" constant="50" id="49W-ZD-dAI"/>
                             <constraint firstItem="Vbz-BZ-nY6" firstAttribute="centerX" secondItem="5cW-co-sU5" secondAttribute="centerX" id="CD5-gR-RMe"/>
+                            <constraint firstItem="zMv-zt-7dP" firstAttribute="top" secondItem="52U-JQ-dly" secondAttribute="bottom" constant="60.5" id="WkV-aD-zkx"/>
                             <constraint firstItem="52U-JQ-dly" firstAttribute="centerX" secondItem="5cW-co-sU5" secondAttribute="centerX" id="Wy6-xF-YWh"/>
                             <constraint firstItem="Vbz-BZ-nY6" firstAttribute="top" secondItem="VsT-aS-cdH" secondAttribute="top" constant="50" id="ZrN-3f-Nm9"/>
+                            <constraint firstItem="zMv-zt-7dP" firstAttribute="centerX" secondItem="5cW-co-sU5" secondAttribute="centerX" id="wn3-5Q-wGM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VsT-aS-cdH"/>
                     </view>
@@ -1042,6 +1054,81 @@ There are still a number of missions open Agent. We hope we can count on you to 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dsx-8s-icn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3626" y="1110"/>
+        </scene>
+        <!--This App Screen-->
+        <scene sceneID="10t-7s-SW4">
+            <objects>
+                <viewController id="Ddq-cE-dR9" customClass="ThisAppScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0UO-GA-Chp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndb-KK-eKB">
+                                <rect key="frame" x="57" y="82" width="300" height="131.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Qme-1K-DxU"/>
+                                </constraints>
+                                <string key="text">This app was developed primarily with Swift and ARKit. Many many stack overflow posts, Swift tutorials, and google searches went into it :) </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-fC-lw4">
+                                <rect key="frame" x="57" y="243.5" width="300" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="OTm-Mp-JMl"/>
+                                </constraints>
+                                <string key="text">Please visit the Github Repo and view the "references" file for an extensive list of these helpful posts and tutorials. https://github.com/lnsaxton/SAS</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There you will also find links to various sources for NASA missions and rocket science. Happy learning!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-1H-2pB">
+                                <rect key="frame" x="57" y="431.5" width="300" height="105.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="CJd-Fr-ZsO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf2-L5-b8q">
+                                <rect key="frame" x="85.5" y="597" width="243" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="m1K-JF-FCu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back to HQ">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qsC-dG-i20"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cQM-fC-lw4" firstAttribute="top" secondItem="ndb-KK-eKB" secondAttribute="bottom" constant="30" id="4vo-Nj-qYJ"/>
+                            <constraint firstItem="ndb-KK-eKB" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="9ig-vw-eNW"/>
+                            <constraint firstItem="yf2-L5-b8q" firstAttribute="top" secondItem="ibt-1H-2pB" secondAttribute="bottom" constant="60" id="GkD-Lz-0Gr"/>
+                            <constraint firstItem="ndb-KK-eKB" firstAttribute="centerY" secondItem="0UO-GA-Chp" secondAttribute="centerY" multiplier="0.33" id="Gwu-uZ-RsY"/>
+                            <constraint firstItem="cQM-fC-lw4" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="fgD-aY-2M9"/>
+                            <constraint firstItem="yf2-L5-b8q" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="g9v-02-veV"/>
+                            <constraint firstItem="ibt-1H-2pB" firstAttribute="top" secondItem="cQM-fC-lw4" secondAttribute="bottom" constant="30" id="u3y-5g-7Vs"/>
+                            <constraint firstItem="ibt-1H-2pB" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="uDt-ew-X0q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EAv-FE-fNt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urT-ns-Yj4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4456.521739130435" y="1113.6160714285713"/>
         </scene>
         <!--Requirements Screen-->
         <scene sceneID="4iO-qn-nNi">
@@ -1538,6 +1625,6 @@ Become familiar with both the sound and the sight of your sample. This is will b
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aiw-dW-Rhy"/>
+        <segue reference="qsC-dG-i20"/>
     </inferredMetricsTieBreakers>
 </document>
