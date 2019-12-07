@@ -946,7 +946,7 @@ If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000
                                     <constraint firstAttribute="width" constant="300" id="Qcr-wq-Bep"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Camera/Launch/AR">
+                                <state key="normal" title="Complete Mission">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -973,7 +973,7 @@ If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fve-MK-Mnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2919" y="1110"/>
+            <point key="canvasLocation" x="2918.840579710145" y="1109.5982142857142"/>
         </scene>
         <!--Mission Impact Finale-->
         <scene sceneID="3S5-gr-9UE">
