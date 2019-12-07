@@ -155,6 +155,8 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
 
  //BEGIN code with citation - Tapped, double tapped, and animate functions
  // https://stackoverflow.com/questions/56393370/is-there-anyway-to-identify-the-touched-node-in-arkit
+ //AND
+ // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
  @objc func tapped(recognizer: UIGestureRecognizer) {
      guard let sceneView = recognizer.view as? SCNView else { return }
      let touchLocation = recognizer.location(in: sceneView)
@@ -197,6 +199,12 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
         lwing.runAction(lwing_action)
         rfin.runAction(rfin_action)
         lfin.runAction(lfin_action)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MissionImpactMathScreen") as! MissionImpactMathScreen
+            self.present(nextViewController, animated:true, completion:nil)
+        })
     }
     
  @objc func doubleTapped(recognizer: UIGestureRecognizer) {
