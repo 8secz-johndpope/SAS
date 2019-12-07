@@ -25,14 +25,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2zO-VT-o5F"/>
-                            <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3YZ-J4-IXl"/>
                             <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="0.33000000000000002" id="76u-4D-Yl8"/>
-                            <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Dls-se-dEf"/>
-                            <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EbS-G0-82U"/>
                             <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HPK-5d-kLG"/>
-                            <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="0.33000000000000002" id="eoh-KJ-MmA"/>
-                            <constraint firstItem="UBN-Kf-cUf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="upO-eg-baj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
