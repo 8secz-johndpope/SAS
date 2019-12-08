@@ -1077,36 +1077,36 @@ There are still a number of missions open Agent. We hope we can count on you to 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndb-KK-eKB">
-                                <rect key="frame" x="57" y="82" width="300" height="131.5"/>
+                                <rect key="frame" x="57" y="105" width="300" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Qme-1K-DxU"/>
                                 </constraints>
                                 <string key="text">This app was developed primarily with Swift and ARKit. Many many stack overflow posts, Swift tutorials, and google searches went into it :) </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQM-fC-lw4">
-                                <rect key="frame" x="57" y="243.5" width="300" height="158"/>
+                                <rect key="frame" x="57" y="221" width="300" height="107.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="OTm-Mp-JMl"/>
                                 </constraints>
                                 <string key="text">Please visit the Github Repo and view the "references" file for an extensive list of these helpful posts and tutorials. https://github.com/lnsaxton/SAS</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There you will also find links to various sources for NASA missions and rocket science. Happy learning!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-1H-2pB">
-                                <rect key="frame" x="57" y="431.5" width="300" height="105.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There you will also find links to various sources for NASA missions and rocket science. Happy learning!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-1H-2pB">
+                                <rect key="frame" x="57" y="358.5" width="300" height="64.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="CJd-Fr-ZsO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf2-L5-b8q">
-                                <rect key="frame" x="85.5" y="597" width="243" height="34"/>
+                                <rect key="frame" x="85.5" y="556" width="243" height="34"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="243" id="m1K-JF-FCu"/>
@@ -1124,15 +1124,26 @@ There are still a number of missions open Agent. We hope we can count on you to 
                                     <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qsC-dG-i20"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The icon for this app is from Icons8 - https://icons8.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lap-hh-cmy">
+                                <rect key="frame" x="57" y="453" width="300" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="QtK-Nl-RBc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cQM-fC-lw4" firstAttribute="top" secondItem="ndb-KK-eKB" secondAttribute="bottom" constant="30" id="4vo-Nj-qYJ"/>
                             <constraint firstItem="ndb-KK-eKB" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="9ig-vw-eNW"/>
-                            <constraint firstItem="yf2-L5-b8q" firstAttribute="top" secondItem="ibt-1H-2pB" secondAttribute="bottom" constant="60" id="GkD-Lz-0Gr"/>
                             <constraint firstItem="ndb-KK-eKB" firstAttribute="centerY" secondItem="0UO-GA-Chp" secondAttribute="centerY" multiplier="0.33" id="Gwu-uZ-RsY"/>
+                            <constraint firstItem="lap-hh-cmy" firstAttribute="top" secondItem="ibt-1H-2pB" secondAttribute="bottom" constant="30" id="Lqq-a5-dxx"/>
                             <constraint firstItem="cQM-fC-lw4" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="fgD-aY-2M9"/>
                             <constraint firstItem="yf2-L5-b8q" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="g9v-02-veV"/>
+                            <constraint firstItem="yf2-L5-b8q" firstAttribute="top" secondItem="lap-hh-cmy" secondAttribute="bottom" constant="60" id="jFQ-DM-nTU"/>
+                            <constraint firstItem="lap-hh-cmy" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="jFS-Wz-TJw"/>
                             <constraint firstItem="ibt-1H-2pB" firstAttribute="top" secondItem="cQM-fC-lw4" secondAttribute="bottom" constant="30" id="u3y-5g-7Vs"/>
                             <constraint firstItem="ibt-1H-2pB" firstAttribute="centerX" secondItem="0UO-GA-Chp" secondAttribute="centerX" id="uDt-ew-X0q"/>
                         </constraints>
@@ -1156,7 +1167,7 @@ There are still a number of missions open Agent. We hope we can count on you to 
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="bU5-CA-Z3V"/>
                                 </constraints>
-                                <string key="text">These missions will require at least middle school literacy levels, basic math  and problem skills to include arithmetic. 
+                                <string key="text">These missions will require at least middle school literacy levels, basic math and problem skills to include arithmetic. 
 
 You need nothing other than your device.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -1266,7 +1277,7 @@ continue to briefing</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2Qu-Jg-eRi" firstAttribute="top" secondItem="JHN-Zq-jpF" secondAttribute="bottom" constant="30" id="BMu-6C-7JF"/>
                             <constraint firstItem="JHN-Zq-jpF" firstAttribute="top" secondItem="bTa-Ot-dcz" secondAttribute="bottom" constant="30" id="D7P-Xw-fvN"/>
@@ -1638,7 +1649,6 @@ Become familiar with both the sound and the sight of your sample. This is will b
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="C1L-U5-qal"/>
-        <segue reference="qsC-dG-i20"/>
+        <segue reference="aiw-dW-Rhy"/>
     </inferredMetricsTieBreakers>
 </document>
