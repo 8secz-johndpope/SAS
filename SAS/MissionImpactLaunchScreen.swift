@@ -41,6 +41,16 @@ class MissionImpactLaunchScreen: UIViewController, ARSCNViewDelegate {
         //for adding multiple scns
         // https://stackoverflow.com/questions/28655395/scenekit-display-multiple-scenes-in-same-scnview
         ship = scene.rootNode.childNode(withName: "ship", recursively: true)!
+        
+        let asteroid_subScene = SCNScene(named: "art.scnassets/asteroid.scn")!
+        let asteroid = asteroid_subScene.rootNode.childNode(withName: "asteroid", recursively: true)!
+        
+        //BEGIN code with citation - how to position things code
+        // https://blog.markdaws.net/arkit-by-example-part1-7830677ef84d
+        asteroid.position = SCNVector3Make(-0.3, 8.0, -2.5)
+        //END CODE with citation - how to position things code
+        
+        sceneView.scene.rootNode.addChildNode(asteroid)
         //END code with citation - multiple scenes
         
         //BEGIN code with citation - how to position things code
@@ -87,7 +97,7 @@ class MissionImpactLaunchScreen: UIViewController, ARSCNViewDelegate {
         
         //BEGIN code with citation - delay functions in swift
         // https://stackoverflow.com/questions/28821722/delaying-function-in-swift
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0, execute: {
             self.sceneView.removeFromSuperview()
         })
         //End code with citation - delay function in swift
