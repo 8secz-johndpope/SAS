@@ -917,6 +917,15 @@ If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000
                                     <segue destination="jRO-eb-Mps" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="C1L-U5-qal"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touble tap the screen to launch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIa-nk-OGk">
+                                <rect key="frame" x="57" y="640.5" width="300" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="W70-0H-Qvi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -925,6 +934,7 @@ If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000
                             <constraint firstItem="HcI-xY-5nG" firstAttribute="leading" secondItem="AZQ-Rd-ilQ" secondAttribute="leading" constant="57" id="5bD-XT-HE8"/>
                             <constraint firstItem="M2g-vb-uEg" firstAttribute="leading" secondItem="HcI-xY-5nG" secondAttribute="trailing" constant="7" id="8W4-cv-2n1"/>
                             <constraint firstItem="hoH-9L-Bdt" firstAttribute="top" secondItem="lXK-i5-n8s" secondAttribute="bottom" constant="31" id="8Yj-YG-zZH"/>
+                            <constraint firstItem="DIa-nk-OGk" firstAttribute="top" secondItem="GTv-GC-gdD" secondAttribute="bottom" constant="15" id="E6Q-Y3-jF4"/>
                             <constraint firstItem="M2g-vb-uEg" firstAttribute="top" secondItem="IqD-yi-T1D" secondAttribute="bottom" constant="31" id="M04-PS-egi"/>
                             <constraint firstItem="PuP-YM-4y8" firstAttribute="leading" secondItem="AZQ-Rd-ilQ" secondAttribute="leading" constant="57" id="Yjh-00-mEO"/>
                             <constraint firstItem="lXK-i5-n8s" firstAttribute="top" secondItem="HcI-xY-5nG" secondAttribute="bottom" constant="50" id="YvT-ch-pgj"/>
@@ -933,6 +943,7 @@ If our rocket is traveling at 11.2 kilometers per second, and it must go 400,000
                             <constraint firstItem="GTv-GC-gdD" firstAttribute="centerX" secondItem="Yc7-Ou-4aE" secondAttribute="centerX" id="dmb-lH-87m"/>
                             <constraint firstItem="PuP-YM-4y8" firstAttribute="top" secondItem="lXK-i5-n8s" secondAttribute="bottom" constant="25" id="fgV-Em-1sW"/>
                             <constraint firstItem="IqD-yi-T1D" firstAttribute="centerX" secondItem="Yc7-Ou-4aE" secondAttribute="centerX" id="h7R-T6-vul"/>
+                            <constraint firstItem="DIa-nk-OGk" firstAttribute="centerX" secondItem="Yc7-Ou-4aE" secondAttribute="centerX" id="ls5-JA-GLb"/>
                             <constraint firstItem="hoH-9L-Bdt" firstAttribute="leading" secondItem="PuP-YM-4y8" secondAttribute="trailing" constant="7" id="x8b-Lj-frc"/>
                             <constraint firstItem="lXK-i5-n8s" firstAttribute="centerX" secondItem="Yc7-Ou-4aE" secondAttribute="centerX" id="z4i-UR-kDJ"/>
                         </constraints>
@@ -1282,13 +1293,13 @@ continue to briefing</string>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="2EY-M4-1G4"/>
                                 </constraints>
-                                <string key="text">Stegonography is the practice of hiding a message inside of some form of media. This could mean hiding a message inside of a painting or a song. 
+                                <mutableString key="text">Steganography is the practice of hiding a message inside of some form of media. This could mean hiding a message inside of a painting or a song. 
 
 For this mission, you will practice stenography with audio samples, to learn how to both encode a message and detect a message.
 
 You will be given a sample audio file. Your first task is to encode a hidden value into the audio file.
 
-Agent, your missions are not the place to play a game of telephone. A poorly encoded message can be the difference between life and death! </string>
+Agent, your missions are not the place to play a game of telephone. A poorly encoded message can be the difference between life and death! </mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1625,6 +1636,7 @@ Become familiar with both the sound and the sight of your sample. This is will b
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="C1L-U5-qal"/>
         <segue reference="qsC-dG-i20"/>
     </inferredMetricsTieBreakers>
 </document>
