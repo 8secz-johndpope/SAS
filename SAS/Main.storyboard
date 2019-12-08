@@ -16,10 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ep6-ig-AmY">
-                                <rect key="frame" x="114.5" y="125.5" width="185" height="45"/>
+                                <rect key="frame" x="57" y="125.5" width="300" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="zGl-9H-RIe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Welcome Agent">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="316-IT-gjU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ojW-EY-7sN"/>
@@ -1649,6 +1653,7 @@ Become familiar with both the sound and the sight of your sample. This is will b
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="K3B-1Z-z9S"/>
         <segue reference="aiw-dW-Rhy"/>
     </inferredMetricsTieBreakers>
 </document>
