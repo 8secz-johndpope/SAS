@@ -25,6 +25,7 @@ var rwing = SCNNode()
 var lwing = SCNNode()
 var rfin = SCNNode()
 var lfin = SCNNode()
+var asteroid = SCNNode()
 
 //BEGIN code with citation - text node
 // https://stackoverflow.com/questions/35733916/changing-the-value-of-string-on-scntext-produces-no-change
@@ -64,12 +65,16 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
          let lf_subScene = SCNScene(named: "art.scnassets/lfin.scn")!
          lfin = lf_subScene.rootNode.childNode(withName: "lfin", recursively: true)!
         
+         let asteroid_subScene = SCNScene(named: "art.scnassets/asteroid.scn")!
+         asteroid = asteroid_subScene.rootNode.childNode(withName: "asteroid", recursively: true)!
+        
          //BEGIN code with citation - naming nodes
          // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
          rwing.name = "rwing"
          lwing.name = "lwing"
          rfin.name = "rfin"
          lfin.name = "lfin"
+         asteroid.name = "asteroid"
          //END code with citation - naming nodes
         
          //BEGIN code with citation - how to position things code
@@ -78,12 +83,14 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
          lwing.position = SCNVector3Make(0.3, -0.2, -1.0);
          rfin.position = SCNVector3Make(0, -0.2, -1.5);
          lfin.position = SCNVector3Make(0.2, -0.2, -1.5);
+         asteroid.position = SCNVector3Make(3.0, 8.0, -15.0)
          //END CODE with citation - how to position things code
         
          sceneView.scene.rootNode.addChildNode(rwing)
          sceneView.scene.rootNode.addChildNode(lwing)
          sceneView.scene.rootNode.addChildNode(rfin)
          sceneView.scene.rootNode.addChildNode(lfin)
+         sceneView.scene.rootNode.addChildNode(asteroid)
          //END CODE with citation - multiple scenes
         
          //BEGIN code with citation - how to rotate objects
@@ -137,7 +144,7 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
     // https://mobile-ar.reality.news/how-to/arkit-101-pilot-your-3d-plane-location-using-hittest-arkit-0184060/
      override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
-         sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
+         //sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
          let configuration = ARWorldTrackingConfiguration()
          configuration.planeDetection = .horizontal
          sceneView.session.run(configuration)
@@ -166,7 +173,7 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
 
      let results = sceneView.hitTest(touchLocation, options: [:])
     
-    //BEGIN code with citation - for each loops
+    // BEGIN code with citation - for each loops
     // https://www.avanderlee.com/swift/loops-swift/
      for result in results {
         let name = result.node.name
@@ -175,10 +182,9 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
             textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
             textNode.geometry = textGeometry
             continue
-        }
-        if name == "lwing" || name == "rwing" || name == "rfin" || name == "lfin" {
+        } else if name == "lwing" || name == "rwing" || name == "rfin" || name == "lfin" {
             current_node = result.node
-            textGeometry = SCNText(string: "Target is " + (result.node.name ?? "None") ?? "None", extrusionDepth: 1)
+            textGeometry = SCNText(string: "Target is " + (result.node.name ?? "None") , extrusionDepth: 1)
             textNode.geometry = textGeometry
             break
         } else if name == "done" {

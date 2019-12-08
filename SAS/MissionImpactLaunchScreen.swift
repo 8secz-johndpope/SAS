@@ -54,7 +54,7 @@ class MissionImpactLaunchScreen: UIViewController, ARSCNViewDelegate {
     // https://mobile-ar.reality.news/how-to/arkit-101-launch-your-own-augmented-reality-rocket-into-real-world-skies-0184922/
     override func viewWillAppear(_ animated: Bool) {
      super.viewWillAppear(animated)
-     sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
+     //sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
      let configuration = ARWorldTrackingConfiguration()
      configuration.planeDetection = .horizontal
      sceneView.session.run(configuration)
