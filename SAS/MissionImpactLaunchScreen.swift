@@ -8,6 +8,11 @@
 
 // citation for the view controller -> adding a ARSCNView on it (not code, but storyboard)
 //https://stackoverflow.com/questions/39629926/ios-can-i-integrate-scenekit-or-spritekit-with-single-view-application
+
+//for references on all model objects -> see references.rtf
+//the ship is a default asset when starting new Xcode AR projects
+//the asteroid is my own creation after studying a few blender tutorials
+
 import UIKit
 import SceneKit
 import ARKit

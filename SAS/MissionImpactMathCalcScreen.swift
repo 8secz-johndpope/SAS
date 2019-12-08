@@ -12,19 +12,31 @@ class MissionImpactMathCalcScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //BEGIN code with citation - dismiss keyboard
+        // https://stackoverflow.com/questions/32281651/how-to-dismiss-keyboard-when-touching-anywhere-outside-uitextfield-in-swift
+        setupToHideKeyboardOnTapOnView()
+        //END code with citation - dismiss keyboard
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+//BEGIN code with citation - dismiss keyboard
+// https://stackoverflow.com/questions/32281651/how-to-dismiss-keyboard-when-touching-anywhere-outside-uitextfield-in-swift
+extension UIViewController
+{
+    func setupToHideKeyboardOnTapOnView()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+}
+//END code with citation - dismiss keyboard
