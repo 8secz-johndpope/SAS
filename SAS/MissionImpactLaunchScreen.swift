@@ -97,7 +97,7 @@ class MissionImpactLaunchScreen: UIViewController, ARSCNViewDelegate {
         
         //BEGIN code with citation - delay functions in swift
         // https://stackoverflow.com/questions/28821722/delaying-function-in-swift
-        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6.0, execute: {
             self.sceneView.removeFromSuperview()
         })
         //End code with citation - delay function in swift

@@ -187,8 +187,16 @@ var textGeometry = SCNText(string: "Target is None", extrusionDepth: 1)
             textNode.geometry = textGeometry
             continue
         } else if name == "lwing" || name == "rwing" || name == "rfin" || name == "lfin" {
+            if name == "lwing" {
+                textGeometry = SCNText(string: "Target is the left wing. The wing is vital for flight" , extrusionDepth: 1)
+            } else if name == "rwing" {
+                textGeometry = SCNText(string: "Target is the right wing. The wing is vital for flight" , extrusionDepth: 1)
+            } else if name == "rfin" {
+                textGeometry = SCNText(string: "Target is the right fin. The fin is vital for steering" , extrusionDepth: 1)
+            } else if name == "lfin" {
+                textGeometry = SCNText(string: "Target is the left fin. The fin is vital for steering" , extrusionDepth: 1)
+            }
             current_node = result.node
-            textGeometry = SCNText(string: "Target is " + (result.node.name ?? "None") , extrusionDepth: 1)
             textNode.geometry = textGeometry
             break
         } else if name == "done" {
