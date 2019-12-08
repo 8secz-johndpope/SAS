@@ -311,61 +311,90 @@ continue to briefing</string>
             <objects>
                 <viewController id="xJ9-ke-lt1" customClass="MissionImpactVideoScreen" customModule="SAS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jNP-a5-KGg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwV-mq-l24">
-                                <rect key="frame" x="7" y="6.5" width="400" height="400"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8SW-h4-Zmg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYh-iW-PgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1023.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dK-9g-9rQ">
+                                                <rect key="frame" x="57" y="490" width="300" height="131.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="cLR-nM-yUN"/>
+                                                </constraints>
+                                                <string key="text">Asteriod x108a has been spotted 500,000 kilometers from Earth. Its current trajectory a direct impact, which will cause an extinction level event. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81q-vt-jBs">
+                                                <rect key="frame" x="57" y="681.5" width="300" height="34"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="BKi-BV-fo5"/>
+                                                    <constraint firstAttribute="height" constant="34" id="ZtM-C5-zdT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="AtC-r2-mbK" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VfO-UO-jrS"/>
+                                                </connections>
+                                            </button>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwV-mq-l24">
+                                                <rect key="frame" x="7" y="30" width="400" height="400"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="0Fm-Z0-gVe"/>
+                                                    <constraint firstAttribute="width" constant="400" id="0lf-fa-EyN"/>
+                                                </constraints>
+                                                <connections>
+                                                    <segue destination="ASa-Iw-la9" kind="embed" id="3bf-sH-ePj"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="81q-vt-jBs" firstAttribute="top" secondItem="8dK-9g-9rQ" secondAttribute="bottom" constant="60" id="EJQ-N5-dt7"/>
+                                            <constraint firstItem="UwV-mq-l24" firstAttribute="centerX" secondItem="QYh-iW-PgN" secondAttribute="centerX" id="Mud-Gd-rzT"/>
+                                            <constraint firstItem="8dK-9g-9rQ" firstAttribute="top" secondItem="UwV-mq-l24" secondAttribute="bottom" constant="60" id="WnD-MU-TJL"/>
+                                            <constraint firstAttribute="bottom" secondItem="81q-vt-jBs" secondAttribute="bottom" constant="308" id="pKE-SP-EvV"/>
+                                            <constraint firstItem="8dK-9g-9rQ" firstAttribute="centerX" secondItem="QYh-iW-PgN" secondAttribute="centerX" id="slA-HI-uSB"/>
+                                            <constraint firstItem="UwV-mq-l24" firstAttribute="top" secondItem="QYh-iW-PgN" secondAttribute="top" constant="30" id="tfk-7o-g70"/>
+                                            <constraint firstItem="81q-vt-jBs" firstAttribute="centerX" secondItem="QYh-iW-PgN" secondAttribute="centerX" id="z4A-zt-l2E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="0Fm-Z0-gVe"/>
-                                    <constraint firstAttribute="width" constant="400" id="0lf-fa-EyN"/>
+                                    <constraint firstItem="QYh-iW-PgN" firstAttribute="width" secondItem="8SW-h4-Zmg" secondAttribute="width" id="09D-8s-6nD"/>
+                                    <constraint firstItem="QYh-iW-PgN" firstAttribute="height" secondItem="8SW-h4-Zmg" secondAttribute="height" priority="250" id="N5c-SE-jf1"/>
+                                    <constraint firstAttribute="bottom" secondItem="QYh-iW-PgN" secondAttribute="bottom" id="VZP-TN-4ZR"/>
+                                    <constraint firstItem="QYh-iW-PgN" firstAttribute="top" secondItem="8SW-h4-Zmg" secondAttribute="top" id="lSZ-Dj-grM"/>
+                                    <constraint firstItem="QYh-iW-PgN" firstAttribute="leading" secondItem="8SW-h4-Zmg" secondAttribute="leading" id="pVD-5K-3mh"/>
+                                    <constraint firstAttribute="trailing" secondItem="QYh-iW-PgN" secondAttribute="trailing" id="yUa-Ky-r8D"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="ASa-Iw-la9" kind="embed" id="3bf-sH-ePj"/>
-                                </connections>
-                            </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dK-9g-9rQ">
-                                <rect key="frame" x="57" y="436.5" width="300" height="131.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="cLR-nM-yUN"/>
-                                </constraints>
-                                <string key="text">Asteriod x108a has been spotted 500,000 kilometers from Earth. Its current trajectory a direct impact, which will cause an extinction level event. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81q-vt-jBs">
-                                <rect key="frame" x="57" y="628" width="300" height="34"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="BKi-BV-fo5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="AtC-r2-mbK" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VfO-UO-jrS"/>
-                                </connections>
-                            </button>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rNW-SR-OG8"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="AmK-1c-D7q"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="81q-vt-jBs" firstAttribute="centerX" secondItem="jNP-a5-KGg" secondAttribute="centerX" id="DOn-QA-XKb"/>
-                            <constraint firstItem="8dK-9g-9rQ" firstAttribute="top" secondItem="UwV-mq-l24" secondAttribute="bottom" constant="30" id="LUQ-2d-hET"/>
-                            <constraint firstItem="UwV-mq-l24" firstAttribute="top" secondItem="Ke9-ej-6es" secondAttribute="top" multiplier="0.15" id="MdI-3f-m1W"/>
-                            <constraint firstItem="UwV-mq-l24" firstAttribute="centerX" secondItem="jNP-a5-KGg" secondAttribute="centerX" id="kbx-pw-8xZ"/>
-                            <constraint firstItem="8dK-9g-9rQ" firstAttribute="centerX" secondItem="jNP-a5-KGg" secondAttribute="centerX" id="shS-E0-04K"/>
-                            <constraint firstItem="81q-vt-jBs" firstAttribute="top" secondItem="8dK-9g-9rQ" secondAttribute="bottom" constant="60" id="xLE-Dd-RTo"/>
+                            <constraint firstItem="Ke9-ej-6es" firstAttribute="trailing" secondItem="8SW-h4-Zmg" secondAttribute="trailing" id="4fn-zh-WJh"/>
+                            <constraint firstItem="Ke9-ej-6es" firstAttribute="top" secondItem="8SW-h4-Zmg" secondAttribute="top" constant="44" id="Vsd-jT-vF5"/>
+                            <constraint firstItem="8SW-h4-Zmg" firstAttribute="bottom" secondItem="Ke9-ej-6es" secondAttribute="bottom" constant="34" id="Yw0-FD-pzc"/>
+                            <constraint firstItem="8SW-h4-Zmg" firstAttribute="leading" secondItem="Ke9-ej-6es" secondAttribute="leading" id="oki-ii-onp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ke9-ej-6es"/>
                     </view>
-                    <size key="freeformSize" width="414" height="896"/>
+                    <size key="freeformSize" width="414" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9cn-QN-e9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
